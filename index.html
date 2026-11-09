@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revenant Crafting</title>
+<meta name="description" content="Who in <Revenant> can craft what, with materials, notes and the Looking for board. From Guild Muster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090b;--panel:#0c0f13;--panel2:#11151b;--line:#262019;--edge:#3a2a12;--hi:#a8761e;--gold:#ffb838;--gold2:#c99436;--text:#ece8da;--muted:#9a9c9a;--dim:#6b6d6c;--green:#45f263;--orange:#ff8f1f;--red:#ff4d3d;
+  --q0:#9d9d9d;--q1:#ffffff;--q2:#1eff00;--q3:#3d8cff;--q4:#b45cff;--q5:#ff8000}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{margin:0;background:var(--bg) radial-gradient(1200px 500px at 50% -120px,#2a1f0e 0%,transparent 70%);color:var(--text);font:14px/1.45 Inter,system-ui,sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line);background:#07090bcc;position:sticky;top:0;z-index:20;backdrop-filter:blur(6px)}
+.bar{display:flex;align-items:center;gap:18px;height:60px}
+.brand{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+.brand b{font-family:Cinzel,serif;color:var(--gold);font-size:22px;letter-spacing:.5px}
+.brand span{color:var(--muted);font-size:12px}
+nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto}
+nav a{padding:7px 12px;border-radius:6px;color:var(--muted);font-weight:500;white-space:nowrap}
+nav a:hover{color:var(--text);background:#ffffff08}
+nav a.on{color:var(--gold);background:#2a1d08;box-shadow:inset 0 0 0 1px var(--edge)}
+.stamp{font-size:12px;color:var(--dim);padding:10px 0 0}
+.stamp b{color:var(--muted);font-weight:500}
+.sample{display:inline-block;margin-left:6px;padding:1px 7px;border-radius:9px;background:#3a1c0b;color:var(--orange);font-size:11px}
+/* hero search */
+.hero{padding:34px 0 18px;text-align:center}
+.hero h1{font-family:Cinzel,serif;font-weight:700;font-size:30px;margin:0 0 6px;color:var(--text)}
+.hero p{margin:0 0 18px;color:var(--muted)}
+.search{position:relative;max-width:640px;margin:0 auto}
+.search input{width:100%;padding:14px 16px 14px 44px;border-radius:10px;border:1px solid var(--edge);background:#030405;color:var(--text);font:inherit;font-size:16px;outline:none}
+.search input:focus{border-color:var(--hi);box-shadow:0 0 0 3px #a8761e33}
+.search svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);opacity:.6}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.chip{padding:5px 11px;border-radius:14px;border:1px solid #2b2f36;background:var(--panel2);color:var(--muted);font-size:12px;cursor:pointer}
+.chip:hover,.chip.on{border-color:var(--hi);color:var(--gold)}
+/* layout */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:16px;margin:18px 0 40px;align-items:start}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+.ph{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line);color:var(--gold);font-weight:600}
+.ph .r{margin-left:auto;color:var(--dim);font-weight:400;font-size:12px}
+.list{max-height:none}
+.row{display:flex;align-items:center;gap:10px;padding:9px 14px;border-bottom:1px solid #15181d;cursor:pointer}
+.row:last-child{border-bottom:0}
+.row:hover{background:#ffffff06}
+.row.sel{background:#2a1d0822;box-shadow:inset 3px 0 0 var(--gold)}
+.ic{width:30px;height:30px;border-radius:5px;flex:none;border:1px solid #000;box-shadow:0 0 0 1px #ffffff14 inset;display:grid;place-items:center;font-weight:700;font-size:12px;color:#000a;font-family:Cinzel,serif}
+.ic.sm{width:22px;height:22px;font-size:10px}
+.nm{font-weight:600}
+.sub{font-size:12px;color:var(--muted)}
+.grow{flex:1;min-width:0}
+.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill{font-size:11px;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.pill.g{background:#0f2b14;color:var(--green)}
+.pill.o{background:#3a2608;color:var(--gold);border:1px solid #6a4512}
+.pill.m{background:#1a1d22;color:var(--muted)}
+.q1{color:var(--q1)}.q2{color:var(--q2)}.q3{color:var(--q3)}.q4{color:var(--q4)}.q5{color:var(--q5)}
+/* detail */
+.detail{position:sticky;top:76px}
+.dh{display:flex;gap:12px;padding:16px 14px;border-bottom:1px solid var(--line)}
+.dh .ic{width:52px;height:52px;font-size:18px}
+.dh h2{margin:0;font-size:18px}
+.sec{padding:12px 14px;border-bottom:1px solid var(--line)}
+.sec:last-child{border-bottom:0}
+.sec h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:var(--gold2)}
+.crafter{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px dashed #1c2026}
+.crafter:last-child{border-bottom:0}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.mat{display:flex;align-items:center;gap:8px;padding:4px 0}
+.mat .n{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--text)}
+.qty{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px;color:var(--muted)}
+.qty button{width:26px;height:26px;border-radius:5px;border:1px solid #3b3f44;background:#14181d;color:var(--text);cursor:pointer}
+.qty b{min-width:24px;text-align:center;color:var(--text);font-size:14px}
+.note{font-size:12px;color:#c9c3a8;font-style:italic}
+.empty{padding:28px 14px;color:var(--muted);text-align:center}
+/* grids */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:18px 0 40px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px;cursor:pointer;transition:border-color .15s}
+.card:hover{border-color:var(--hi)}
+.card h3{margin:0;font-size:16px}
+.skill{height:6px;border-radius:3px;background:#000;margin:8px 0 4px;overflow:hidden}
+.skill i{display:block;height:100%;background:linear-gradient(90deg,#8a5d14,var(--gold))}
+.prog{height:8px;border-radius:3px;background:#000a;overflow:hidden;position:relative;flex:none}
+.prog i{position:absolute;left:0;top:0;bottom:0;background:#4db84d}
+.prog u{position:absolute;top:0;bottom:0;background:#d9b34088}
+.pagehead{padding:26px 0 0}
+.pagehead h1{font-family:Cinzel,serif;margin:0;font-size:26px}
+.pagehead p{margin:4px 0 0;color:var(--muted)}
+.back{display:inline-block;margin-top:18px;color:var(--muted);font-size:13px}
+.back:hover{color:var(--gold)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.filter{padding:9px 12px;border-radius:8px;border:1px solid #2b2f36;background:#030405;color:var(--text);font:inherit;min-width:220px}
+footer{border-top:1px solid var(--line);color:var(--dim);font-size:12px;padding:18px 0 30px}
+footer a{color:var(--muted);text-decoration:underline}
+@media (max-width:900px){.cols{grid-template-columns:minmax(0,1fr)}.detail{position:static}.brand span{display:none}}
+@media (max-width:560px){.bar{height:auto;flex-wrap:wrap;padding:10px 16px;gap:6px}nav{margin-left:0;width:100%}.hero h1{font-size:24px}.row .pill.g{display:none}.ph .r{display:none}.grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+<script>const whTooltips = { colorLinks: false, iconizeLinks: false, renameLinks: false };</script>
+<script src="https://wow.zamimg.com/js/tooltips.js" defer></script>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a class="brand" href="#/"><b>&lt;Revenant&gt;</b><span>Guild crafting</span></a>
+  <nav id="nav">
+    <a href="#/" data-p="search">Find a crafter</a>
+    <a href="#/professions" data-p="professions">Professions</a>
+    <a href="#/crafters" data-p="crafters">Crafters</a>
+    <a href="#/looking" data-p="looking">Looking for</a>
+    <a href="#/requested" data-p="requested">Most requested</a>
+  </nav>
+</div></header>
+<main class="wrap" id="app"></main>
+<footer><div class="wrap">From Guild Muster: crafters who share their recipes in-game. <span id="foot"></span> Item tooltips by <a href="https://www.wowhead.com/classic" target="_blank" rel="noopener">Wowhead</a>.</div></footer>
+
+<script id="gm-data" type="application/json">
+{
+  "guild": "Revenant", "updated": 1762690000, "updatedBy": "Dalian", "sample": true,
+  "crafters": [
+    {"key":"kemet","name":"Kemet","class":"WARRIOR","main":"Kemet","online":"2h ago","profs":{"Blacksmithing":{"rank":300,"max":300,"spec":"Weaponsmith"},"Mining":{"rank":300,"max":300}},"open":true,"blurb":"Weapons and plate, bring mats","thanks":7},
+    {"key":"ana","name":"Ana Brightwell","class":"PRIEST","online":"online","profs":{"Tailoring":{"rank":300,"max":300},"Enchanting":{"rank":285,"max":300}},"open":true,"blurb":"Mooncloth every 4 days","thanks":4},
+    {"key":"laeth","name":"Laethwraith Laethski","class":"MAGE","online":"today","profs":{"Alchemy":{"rank":300,"max":300,"spec":"Transmute"},"Herbalism":{"rank":300,"max":300}},"open":true,"blurb":"Flasks: bring your own Black Lotus","thanks":11},
+    {"key":"dalian","name":"Dalian","class":"PALADIN","online":"online","profs":{"Enchanting":{"rank":300,"max":300},"Tailoring":{"rank":260,"max":300}},"open":true,"blurb":"Crusader tips welcome","thanks":9},
+    {"key":"trazyn","name":"Trazyn Infinitus","class":"WARLOCK","online":"yesterday","profs":{"Alchemy":{"rank":240,"max":300},"Herbalism":{"rank":250,"max":300}},"open":false,"blurb":"","thanks":1},
+    {"key":"demon","name":"Demon Stormcaller","class":"SHAMAN","online":"3 days ago","profs":{"Leatherworking":{"rank":290,"max":300,"spec":"Elemental"},"Skinning":{"rank":300,"max":300}},"open":true,"blurb":"Devilsaur sets if you have the leather","thanks":3},
+    {"key":"bo","name":"Bo","class":"ROGUE","online":"online","profs":{"Engineering":{"rank":275,"max":300,"spec":"Goblin"},"Mining":{"rank":280,"max":300}},"open":true,"blurb":"Bombs and dynamite","thanks":2}
+  ],
+  "recipes": [
+    {"id":"i13510","name":"Flask of the Titans","q":1,"prof":"Alchemy","mats":[["Gromsblood",30],["Stonescale Oil",10],["Black Lotus",1],["Crystal Vial",1]],"by":["laeth"],"asked":14,"col":"#c03a2b"},
+    {"id":"i13511","name":"Flask of Distilled Wisdom","q":1,"prof":"Alchemy","mats":[["Dreamfoil",30],["Icecap",10],["Black Lotus",1],["Crystal Vial",1]],"by":["laeth"],"asked":6,"col":"#3c6fd6"},
+    {"id":"i13452","name":"Elixir of the Mongoose","q":1,"prof":"Alchemy","mats":[["Mountain Silversage",2],["Plaguebloom",2],["Crystal Vial",1]],"by":["laeth","trazyn"],"asked":9,"col":"#5aa83a"},
+    {"id":"i13446","name":"Major Healing Potion","q":1,"prof":"Alchemy","mats":[["Golden Sansam",2],["Mountain Silversage",1],["Crystal Vial",1]],"by":["laeth","trazyn"],"asked":5,"col":"#d23b3b"},
+    {"id":"i12360","name":"Arcanite Bar","q":2,"prof":"Alchemy","mats":[["Thorium Bar",1],["Arcane Crystal",1]],"by":["laeth"],"asked":8,"col":"#8a6bd6","note":"Transmute, once a day"},
+    {"id":"i12784","name":"Arcanite Reaper","q":4,"prof":"Blacksmithing","mats":[["Arcanite Bar",15],["Enchanted Leather",10]],"by":["kemet"],"asked":4,"col":"#9b3ad6","note":"mats + 5g"},
+    {"id":"i12404","name":"Dense Sharpening Stone","q":1,"prof":"Blacksmithing","mats":[["Dense Stone",1]],"by":["kemet"],"asked":3,"col":"#8e8a7c"},
+    {"id":"i12359","name":"Thorium Bar","q":1,"prof":"Mining","mats":[["Thorium Ore",1]],"by":["kemet","bo"],"asked":1,"col":"#6f8c85"},
+    {"id":"i14342","name":"Mooncloth","q":2,"prof":"Tailoring","mats":[["Felcloth",2]],"by":["ana"],"asked":7,"col":"#9fb7d9","note":"every 4 days"},
+    {"id":"i14152","name":"Robe of the Archmage","q":4,"prof":"Tailoring","mats":[["Mooncloth",10],["Runecloth",12],["Ironweb Spider Silk",2],["Essence of Fire",10]],"by":["ana"],"asked":2,"col":"#a34cd1"},
+    {"id":"i14046","name":"Runecloth Bag","q":2,"prof":"Tailoring","mats":[["Runecloth",5],["Rugged Leather",2],["Rune Thread",1]],"by":["ana","dalian"],"asked":6,"col":"#7d6a4e"},
+    {"id":"s20034","name":"Enchant Weapon - Crusader","q":1,"prof":"Enchanting","mats":[["Large Brilliant Shard",4],["Righteous Orb",2]],"by":["dalian"],"asked":12,"col":"#d9c46a","note":"tips welcome"},
+    {"id":"s20025","name":"Enchant Chest - Greater Stats","q":1,"prof":"Enchanting","mats":[["Large Brilliant Shard",4],["Illusion Dust",15],["Greater Eternal Essence",10]],"by":["dalian","ana"],"asked":8,"col":"#c9a6e8"},
+    {"id":"s20010","name":"Enchant Bracer - Superior Strength","q":1,"prof":"Enchanting","mats":[["Illusion Dust",6],["Essence of Earth",6]],"by":["dalian"],"asked":4,"col":"#c07a3c"},
+    {"id":"i15062","name":"Devilsaur Leggings","q":3,"prof":"Leatherworking","mats":[["Devilsaur Leather",14],["Rugged Leather",4],["Rune Thread",1]],"by":["demon"],"asked":5,"col":"#557a3b"},
+    {"id":"i15063","name":"Devilsaur Gauntlets","q":3,"prof":"Leatherworking","mats":[["Devilsaur Leather",8],["Rugged Leather",4],["Rune Thread",1]],"by":["demon"],"asked":4,"col":"#557a3b"},
+    {"id":"i18641","name":"Dense Dynamite","q":1,"prof":"Engineering","mats":[["Dense Blasting Powder",2],["Runecloth",3]],"by":["bo"],"asked":3,"col":"#b8452f"},
+    {"id":"i15993","name":"Thorium Grenade","q":1,"prof":"Engineering","mats":[["Thorium Widget",1],["Thorium Bar",3],["Dense Blasting Powder",3],["Runecloth",3]],"by":["bo"],"asked":2,"col":"#7c7a70"}
+  ],
+  "looking": [
+    {"who":"kemet","item":"Thorium Bar","got":12,"want":20,"otw":3,"note":"for an Arcanite Reaper"},
+    {"who":"kemet","item":"Star Ruby","got":2,"want":6,"otw":0,"note":""},
+    {"who":"bo","item":"Runecloth","got":24,"want":80,"otw":16,"note":"Levelling Tailoring on my alt"},
+    {"who":"bo","item":"Rugged Leather","got":0,"want":10,"otw":0,"note":""},
+    {"who":"ana","item":"Felcloth","got":6,"want":20,"otw":2,"note":"Mooncloth for the guild"}
+  ]
+}
+</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('gm-data').textContent);
+  if (D.sample) D.updated = Math.floor(Date.now() / 1000) - 2 * 3600;   // sample data: always "2h ago"
+  const CLASS = { WARRIOR:'#c79c6e', PALADIN:'#f58cba', HUNTER:'#abd473', ROGUE:'#fff569', PRIEST:'#ffffff', SHAMAN:'#0070de', MAGE:'#40c7eb', WARLOCK:'#8787ed', DRUID:'#ff7d0a' };
+  const PROF_ICON = { Alchemy:'#5aa83a', Blacksmithing:'#8e8a7c', Enchanting:'#a34cd1', Engineering:'#b8452f', Leatherworking:'#7d6a4e', Tailoring:'#9fb7d9', Mining:'#6f8c85', Herbalism:'#5c8f3a', Skinning:'#8a5a3a', Jewelcrafting:'#3db5c9', Cooking:'#c98a3a', 'First Aid':'#d23b3b', Fishing:'#3a7ac9' };
+  const byKey = Object.fromEntries(D.crafters.map(c => [c.key, c]));
+  const app = document.getElementById('app');
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+  const fold = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const ago = ts => { const h = Math.max(0, (Date.now() / 1000 - ts) / 3600); return h < 1 ? 'just now' : h < 24 ? Math.round(h) + 'h ago' : Math.round(h / 24) + ' days ago'; };
+  const isOnline = c => c.online === 'online';
+  const wh = id => id[0] === 'i' ? `https://www.wowhead.com/classic/item=${id.slice(1)}` : `https://www.wowhead.com/classic/spell=${id.slice(1)}`;
+  const icon = (col, label, cls = '') => `<span class="ic ${cls}" style="background:linear-gradient(135deg,${col},#00000088)">${esc(label[0])}</span>`;
+  const cname = c => `<span style="color:${CLASS[c.class] || '#ddd'}">${esc(c.name)}</span>`;
+  const status = c => isOnline(c) ? '<span class="dot" style="background:var(--green)"></span>' : '<span class="dot" style="background:#444"></span>';
+
+  document.getElementById('foot').textContent = `Updated ${ago(D.updated)} from ${D.updatedBy}'s Guild Muster.`;
+  const stamp = () => `<div class="stamp">Updated <b>${ago(D.updated)}</b> from ${esc(D.updatedBy)}'s Guild Muster${D.sample ? '<span class="sample">sample data</span>' : ''}</div>`;
+
+  const state = { q: '', prof: 'all', pick: null, qty: 1 };
+  function matches() {
+    const q = fold(state.q.trim());
+    return D.recipes.filter(r => (state.prof === 'all' || r.prof === state.prof) &&
+      (!q || fold(r.name).includes(q) || r.mats.some(m => fold(m[0]).includes(q)) || r.by.some(k => fold(byKey[k].name).includes(q))))
+      .sort((a, b) => b.asked - a.asked || a.name.localeCompare(b.name));
+  }
+  function crafterLine(k, r) {
+    const c = byKey[k], p = c.profs[r.prof] || {};
+    return `<a class="crafter" href="#/crafter/${c.key}">${status(c)}<div class="grow"><div class="nm">${cname(c)} ${p.spec ? `<span class="sub">${esc(p.spec)}</span>` : ''}</div>
+      <div class="sub">${esc(r.prof)} ${p.rank || '?'} · ${isOnline(c) ? '<span style="color:var(--green)">online now</span>' : 'seen ' + esc(c.online)}${c.thanks ? ` · ${c.thanks} thanks` : ''}</div>
+      ${c.blurb ? `<div class="note">"${esc(c.blurb)}"</div>` : ''}</div>${c.open ? '<span class="pill g">Taking orders</span>' : '<span class="pill m">Not taking orders</span>'}</a>`;
+  }
+  function detail(r) {
+    if (!r) return `<div class="panel detail"><div class="empty">Pick something on the left to see who makes it and what it takes.</div></div>`;
+    const crafters = [...r.by].sort((a, b) => (isOnline(byKey[b]) - isOnline(byKey[a])) || (byKey[b].open - byKey[a].open));
+    return `<div class="panel detail">
+      <div class="dh">${icon(r.col, r.name)}<div class="grow"><h2><a class="q${r.q}" href="${wh(r.id)}" target="_blank" rel="noopener">${esc(r.name)}</a></h2>
+        <div class="sub">${esc(r.prof)} · ${r.by.length} crafter${r.by.length === 1 ? '' : 's'} · asked ${r.asked} time${r.asked === 1 ? '' : 's'} this month</div>
+        ${r.note ? `<div class="note" style="margin-top:4px">"${esc(r.note)}"</div>` : ''}</div></div>
+      <div class="sec"><h3>Who can make it</h3>${crafters.map(k => crafterLine(k, r)).join('')}</div>
+      <div class="sec"><h3>Materials</h3>
+        <div class="qty">How many? <button data-q="-1" aria-label="fewer">-</button><b>${state.qty}</b><button data-q="1" aria-label="more">+</button></div>
+        ${r.mats.map(m => `<div class="mat">${icon('#55504a', m[0], 'sm')}<span>${esc(m[0])}</span><span class="n">${m[1] * state.qty}</span></div>`).join('')}
+        <div class="sub" style="margin-top:8px">Whisper a crafter in game, or press Ask to craft on their Guild Muster card.</div>
+      </div></div>`;
+  }
+  function pageSearch() {
+    const list = matches();
+    if (!state.pick || !list.find(r => r.id === state.pick)) state.pick = list[0] ? list[0].id : null;
+    const profs = ['all', ...new Set(D.recipes.map(r => r.prof))];
+    const pick = D.recipes.find(r => r.id === state.pick);
+    app.innerHTML = `${stamp()}
+      <section class="hero"><h1>What do you need made?</h1><p>${D.recipes.length} recipes from ${D.crafters.length} guild crafters</p>
+        <div class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffb838" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="q" placeholder="flask, arcanite, crusader, a crafter's name..." value="${esc(state.q)}" autocomplete="off"></div>
+        <div class="chips">${profs.map(p => `<span class="chip ${state.prof === p ? 'on' : ''}" data-prof="${esc(p)}">${p === 'all' ? 'Everything' : esc(p)}</span>`).join('')}</div></section>
+      <div class="cols"><div class="panel"><div class="ph">Recipes <span class="r">${list.length} found · most requested first</span></div><div class="list">
+        ${list.length ? list.map(r => `<div class="row ${r.id === state.pick ? 'sel' : ''}" data-id="${r.id}">${icon(r.col, r.name)}
+          <div class="grow"><div class="nm ell q${r.q}">${esc(r.name)}</div><div class="sub ell">${esc(r.prof)} · ${r.by.map(k => byKey[k].name).join(', ')}</div></div>
+          ${r.by.some(k => isOnline(byKey[k])) ? '<span class="pill g">crafter online</span>' : ''}${r.asked >= 8 ? `<span class="pill o">Popular · ${r.asked}</span>` : ''}</div>`).join('')
+          : '<div class="empty">Nobody in the guild has shared that recipe yet.</div>'}
+      </div></div>${detail(pick)}</div>`;
+    const q = document.getElementById('q');
+    q.addEventListener('input', () => { state.q = q.value; const pos = q.selectionStart; pageSearch(); const n = document.getElementById('q'); n.focus(); n.setSelectionRange(pos, pos); });
+    app.querySelectorAll('[data-prof]').forEach(el => el.onclick = () => { state.prof = el.dataset.prof; pageSearch(); });
+    app.querySelectorAll('.row[data-id]').forEach(el => el.onclick = () => { state.pick = el.dataset.id; state.qty = 1; pageSearch(); if (innerWidth < 900) document.querySelector('.detail').scrollIntoView({ behavior: 'smooth' }); });
+    app.querySelectorAll('[data-q]').forEach(el => el.onclick = () => { state.qty = Math.max(1, Math.min(99, state.qty + +el.dataset.q)); pageSearch(); });
+    refreshTips();
+  }
+  function pageProfessions() {
+    const profs = {};
+    D.crafters.forEach(c => Object.entries(c.profs).forEach(([p, s]) => { (profs[p] = profs[p] || { crafters: [], recipes: 0 }).crafters.push({ c, s }); }));
+    D.recipes.forEach(r => { if (profs[r.prof]) profs[r.prof].recipes++; });
+    app.innerHTML = `${stamp()}<div class="pagehead"><h1>Professions</h1><p>Who's got what, and how far along they are.</p></div>
+      <div class="grid">${Object.entries(profs).sort((a, b) => b[1].crafters.length - a[1].crafters.length).map(([p, x]) => `
+        <div class="card" data-prof="${esc(p)}"><div style="display:flex;gap:10px;align-items:center">${icon(PROF_ICON[p] || '#777', p)}<div><h3>${esc(p)}</h3>
+          <div class="sub">${x.crafters.length} crafter${x.crafters.length === 1 ? '' : 's'}${x.recipes ? ` · ${x.recipes} featured recipes` : ''}</div></div></div>
+          ${x.crafters.sort((a, b) => b.s.rank - a.s.rank).map(({ c, s }) => `<div style="margin-top:10px"><div style="display:flex;justify-content:space-between;font-size:13px">${cname(c)}<span class="sub">${s.rank}/${s.max}${s.spec ? ' · ' + esc(s.spec) : ''}</span></div>
+            <div class="skill"><i style="width:${Math.round(s.rank / s.max * 100)}%"></i></div></div>`).join('')}</div>`).join('')}</div>`;
+    app.querySelectorAll('.card[data-prof]').forEach(el => el.onclick = () => { state.prof = el.dataset.prof; state.q = ''; location.hash = '#/'; });
+  }
+  function pageCrafters() {
+    app.innerHTML = `${stamp()}<div class="pagehead"><h1>Crafters</h1><p>Everyone sharing recipes through Guild Muster.</p>
+      <div class="tabs"><input class="filter" id="cf" placeholder="Filter by name or profession"></div></div><div class="grid" id="cg"></div>`;
+    const draw = () => {
+      const f = fold(document.getElementById('cf').value);
+      document.getElementById('cg').innerHTML = D.crafters.filter(c => !f || fold(c.name).includes(f) || Object.keys(c.profs).some(p => fold(p).includes(f)))
+        .sort((a, b) => isOnline(b) - isOnline(a) || b.thanks - a.thanks).map(c => `
+        <a class="card" href="#/crafter/${c.key}"><div style="display:flex;align-items:center;gap:8px">${status(c)}<h3>${cname(c)}</h3><span class="sub" style="margin-left:auto">${isOnline(c) ? 'online' : esc(c.online)}</span></div>
+          ${c.blurb ? `<div class="note" style="margin-top:4px">"${esc(c.blurb)}"</div>` : ''}
+          ${Object.entries(c.profs).map(([p, s]) => `<div style="margin-top:9px;display:flex;justify-content:space-between;font-size:13px"><span>${esc(p)}${s.spec ? ` <span class="sub">${esc(s.spec)}</span>` : ''}</span><span class="sub">${s.rank}/${s.max}</span></div><div class="skill"><i style="width:${Math.round(s.rank / s.max * 100)}%"></i></div>`).join('')}
+          <div style="margin-top:10px;display:flex;gap:6px">${c.open ? '<span class="pill g">Taking orders</span>' : '<span class="pill m">Not taking orders</span>'}${c.thanks ? `<span class="pill o">${c.thanks} thanks</span>` : ''}</div></a>`).join('');
+    };
+    document.getElementById('cf').addEventListener('input', draw); draw();
+  }
+  function pageCrafter(key) {
+    const c = byKey[key];
+    if (!c) { app.innerHTML = '<div class="empty">No crafter by that name.</div>'; return; }
+    const recipes = D.recipes.filter(r => r.by.includes(key));
+    const needs = D.looking.filter(n => n.who === key);
+    app.innerHTML = `<a class="back" href="#/crafters">&larr; All crafters</a>
+      <div class="pagehead" style="padding-top:8px"><h1>${cname(c)}</h1><p>${isOnline(c) ? '<span style="color:var(--green)">Online now</span>' : 'Last seen ' + esc(c.online)} · ${c.open ? 'taking orders' : 'not taking orders right now'}${c.thanks ? ` · thanked ${c.thanks} times this month` : ''}</p>
+      ${c.blurb ? `<p class="note" style="margin-top:6px">"${esc(c.blurb)}"</p>` : ''}</div>
+      <div class="cols"><div class="panel"><div class="ph">Recipes <span class="r">${recipes.length}</span></div>
+        ${recipes.map(r => `<a class="row" href="#/" data-go="${r.id}">${icon(r.col, r.name)}<div class="grow"><div class="nm q${r.q} ell">${esc(r.name)}</div><div class="sub">${esc(r.prof)}${r.note ? ` · <span class="note">"${esc(r.note)}"</span>` : ''}</div></div>${r.asked >= 8 ? `<span class="pill o">Popular · ${r.asked}</span>` : ''}</a>`).join('')}</div>
+        <div><div class="panel"><div class="ph">Professions</div><div class="sec">${Object.entries(c.profs).map(([p, s]) => `<div style="display:flex;justify-content:space-between"><span>${esc(p)}${s.spec ? ` <span class="sub">${esc(s.spec)}</span>` : ''}</span><span class="sub">${s.rank}/${s.max}</span></div><div class="skill" style="margin-bottom:12px"><i style="width:${Math.round(s.rank / s.max * 100)}%"></i></div>`).join('')}</div></div>
+        ${needs.length ? `<div class="panel" style="margin-top:16px"><div class="ph">Looking for</div><div class="sec">${needs.map(needRow).join('')}</div></div>` : ''}</div></div>`;
+    app.querySelectorAll('[data-go]').forEach(el => el.onclick = e => { e.preventDefault(); state.pick = el.dataset.go; state.q = ''; state.prof = 'all'; location.hash = '#/'; });
+  }
+  function needRow(n) {
+    const w = Math.min(100, n.got / n.want * 100), o = Math.min(100 - w, n.otw / n.want * 100);
+    return `<div style="padding:8px 0;border-bottom:1px dashed #1c2026"><div style="display:flex;align-items:center;gap:8px">${icon('#55504a', n.item, 'sm')}<span class="nm">${esc(n.item)}</span>
+      <span class="sub" style="margin-left:auto">${n.got} / ${n.want}${n.otw ? ` <span style="color:#d9b340">+${n.otw} on the way</span>` : ''}</span></div>
+      <div class="prog" style="width:100%;margin-top:6px"><i style="width:${w}%"></i><u style="left:${w}%;width:${o}%"></u></div>${n.note ? `<div class="note" style="margin-top:4px">"${esc(n.note)}"</div>` : ''}</div>`;
+  }
+  function pageLooking() {
+    const by = {};
+    D.looking.forEach(n => (by[n.who] = by[n.who] || []).push(n));
+    app.innerHTML = `${stamp()}<div class="pagehead"><h1>Looking for</h1><p>What guildmates are collecting. Mail or trade them some, then press I sent some on their Worker board card in game.</p></div>
+      <div class="grid">${Object.entries(by).map(([k, list]) => { const c = byKey[k]; return `<div class="card" style="cursor:default"><div style="display:flex;align-items:center;gap:8px">${status(c)}<h3><a href="#/crafter/${k}">${cname(c)}</a></h3></div>${list.map(needRow).join('')}</div>`; }).join('')}</div>`;
+  }
+  function pageRequested() {
+    const list = [...D.recipes].sort((a, b) => b.asked - a.asked).slice(0, 12);
+    const max = list[0] ? list[0].asked : 1;
+    app.innerHTML = `${stamp()}<div class="pagehead"><h1>Most requested</h1><p>Craft requests sent through Guild Muster in the last 30 days. Few crafters and lots of asks? A good one to pick up.</p></div>
+      <div class="panel" style="margin:18px 0 40px">${list.map((r, i) => `<a class="row" href="#/" data-go="${r.id}"><span class="sub" style="width:20px;text-align:right">${i + 1}</span>${icon(r.col, r.name)}
+        <div class="grow"><div class="nm q${r.q} ell">${esc(r.name)}</div><div class="prog" style="width:100%;max-width:340px;margin-top:6px"><i style="width:${r.asked / max * 100}%;background:linear-gradient(90deg,#8a5d14,var(--gold))"></i></div></div>
+        <span class="sub" style="text-align:right">${r.asked} asks<br>${r.by.length} crafter${r.by.length === 1 ? '' : 's'}</span>${r.by.length === 1 ? '<span class="pill o">Only one crafter</span>' : ''}</a>`).join('')}</div>`;
+    app.querySelectorAll('[data-go]').forEach(el => el.onclick = e => { e.preventDefault(); state.pick = el.dataset.go; state.q = ''; state.prof = 'all'; location.hash = '#/'; });
+  }
+  function refreshTips() { try { if (window.$WowheadPower && $WowheadPower.refreshLinks) $WowheadPower.refreshLinks(); } catch (e) {} }
+  function route() {
+    const h = location.hash.replace(/^#\/?/, '');
+    const [page, arg] = h.split('/');
+    const p = page || 'search';
+    document.querySelectorAll('#nav a').forEach(a => a.classList.toggle('on', a.dataset.p === (p === 'crafter' ? 'crafters' : p)));
+    if (p === 'professions') pageProfessions(); else if (p === 'crafters') pageCrafters(); else if (p === 'crafter') pageCrafter(arg);
+    else if (p === 'looking') pageLooking(); else if (p === 'requested') pageRequested(); else pageSearch();
+    if (p !== 'search') scrollTo(0, 0);
+  }
+  addEventListener('hashchange', route);
+  route();
+})();
+</script>
+</body></html>
