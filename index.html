@@ -95,7 +95,7 @@ select.input{padding:9px 10px}
 /* raids */
 .roles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .role h4{margin:0 0 6px;font-size:12px;color:var(--gold2);text-transform:uppercase;letter-spacing:.6px;display:flex;justify-content:space-between}
-.who{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:13px}
+.who{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:13px;white-space:nowrap;overflow:hidden;min-width:0}
 .src{font-size:10px;padding:0 5px;border-radius:6px;background:#1a1d22;color:var(--muted)}
 .src.d{background:#20214a;color:#9aa4ff}
 .groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
@@ -249,7 +249,26 @@ footer a{color:var(--muted);text-decoration:underline}
   const stamp = () => `<div class="stamp">Updated <b>${ago(D.updated)}</b> from ${esc(D.updatedBy)}'s Guild Muster${D.sample ? '<span class="sample">sample data</span>' : ''}</div>`;
   document.getElementById('foot').textContent = `Updated ${ago(D.updated)}.`;
 
-  const raids = D.raids.map(r => ({ ...r, at: when(r.when) })).sort((a, b) => a.at - b.at);
+  let raids = D.raids.map(r => ({ ...r, at: when(r.when) })).sort((a, b) => a.at - b.at);
+  let rhInfo = null;   // set when data/raidhelper.json (written by the Raid-Helper GitHub Action) loads
+  // Raid-Helper sign-ups use Discord names; match them to guild members where we can ("Sovamere" -> Sova Mere)
+  const squash = s => fold(s).replace(/[^a-z0-9]/g, '');
+  const matchMember = n => { if (D.sample) return null; const q = squash(n); if (!q) return null; return D.members.find(m => squash(m.name) === q || squash(m.name.split(' ')[0]) === q) || null; };
+  const RHROLE = { Tanks: 'tank', Healers: 'healer', Melee: 'melee', Ranged: 'ranged' };
+  const RHCLASS = { Warrior: 'WARRIOR', Paladin: 'PALADIN', Hunter: 'HUNTER', Rogue: 'ROGUE', Priest: 'PRIEST', Shaman: 'SHAMAN', Mage: 'MAGE', Warlock: 'WARLOCK', Druid: 'DRUID' };
+  // Raid-Helper's "Tank" pseudo-class: the spec says which class (Protection = Warrior, Protection1 = Paladin, Guardian/Feral = Druid)
+  const SPEC2CLASS = { Protection: 'WARRIOR', Protection1: 'PALADIN', Guardian: 'DRUID', Feral: 'DRUID' };
+  function rhRaid(e) {
+    const r = { id: 'rh' + e.id, title: e.title || 'Raid', at: new Date((e.startTime || 0) * 1000), size: 0, leader: e.leaderName || '?', channel: e.channelName || '',
+      kind: /warsong|arathi|alterac|premade|pvp|battleground/i.test(e.title || '') ? 'PvP' : 'PvE', note: e.description || '', rh: true,
+      signups: { tank: [], healer: [], melee: [], ranged: [] }, late: [], bench: [], absent: [], tentative: [] };
+    for (const su of (e.signUps || []).slice().sort((a, b) => (a.position || 0) - (b.position || 0))) {
+      const nm = su.name || '?', st = su.className || '';
+      if (st === 'Absence') r.absent.push(nm); else if (st === 'Late') r.late.push(nm); else if (st === 'Tentative') r.tentative.push(nm); else if (st === 'Bench') r.bench.push(nm);
+      else r.signups[RHROLE[su.roleName] || 'ranged'].push([nm, 'd', RHCLASS[st] || SPEC2CLASS[su.specName] || null, String(su.specName || '').replace(/\d+$/, '')]);
+    }
+    return r;
+  }
   const events = D.events.map(e => ({ ...e, at: when(e.when) })).sort((a, b) => a.at - b.at);
   const count = r => Object.values(r.signups).reduce((n, l) => n + l.length, 0);
 
@@ -264,13 +283,13 @@ footer a{color:var(--muted);text-decoration:underline}
         <div class="next">${next ? `<div class="k">Next up · ${next.type === 'raid' ? esc(next.kind) + ' raid' : esc(next.kind)}</div>
           <h2>${esc(next.title)}</h2><div>${both(next.at)}</div>
           <div class="count"><div><b>${u.dd}</b><span>days</span></div><div><b>${u.hh}</b><span>hours</span></div><div><b>${u.mm}</b><span>min</span></div></div>
-          <div class="sub">${next.type === 'raid' ? `${count(next)} / ${next.size} signed up · led by ${esc(next.leader)}` : `${next.going.length} going · hosted by ${esc(next.host)}`}</div>
+          <div class="sub">${next.type === 'raid' ? `${count(next)}${next.size ? ' / ' + next.size : ''} signed up · led by ${esc(next.leader)}` : `${next.going.length} going · hosted by ${esc(next.host)}`}</div>
           <div style="margin-top:12px"><a class="btn gold" href="#/${next.type === 'raid' ? 'raids/' + next.id : 'events'}">See the ${next.type}</a></div>` : '<div class="empty">Nothing planned yet.</div>'}</div>
         <div class="panel"><div class="ph">Coming up<a class="r" href="#/raids">All raids &rarr;</a></div>
           ${[...raids.map(r => ({ ...r, type: 'raid' })), ...events.map(e => ({ ...e, type: 'event' }))].sort((a, b) => a.at - b.at).slice(0, 5).map(x => `
             <a class="row" href="#/${x.type === 'raid' ? 'raids/' + x.id : 'events'}"><span class="pill ${x.type === 'raid' ? (x.kind === 'PvP' ? 'r' : 'o') : 'b'}">${x.type === 'raid' ? esc(x.kind) : 'Event'}</span>
               <div class="grow"><div class="nm ell">${esc(x.title)}</div><div class="sub ell">${fmt(x.at, D.serverTZ)} Server · ${fmt(x.at)} Local</div></div>
-              <span class="sub">${x.type === 'raid' ? count(x) + '/' + x.size : x.going.length + ' going'}</span></a>`).join('')}
+              <span class="sub">${x.type === 'raid' ? (count(x) + (x.size ? '/' + x.size : ' signed up')) : x.going.length + ' going'}</span></a>`).join('')}
         </div>
       </div>
       <div class="stat"><div><b>${D.members.length}</b><span>characters</span></div><div><b style="color:var(--green)">${nOnline}</b><span>online at the last update</span></div>
@@ -290,24 +309,30 @@ footer a{color:var(--muted);text-decoration:underline}
   // ---------------------------------------------------------------- Raids
   function roleCol(r, role) {
     const l = r.signups[role] || [];
-    return `<div class="role"><h4>${ROLE[role]}<span class="sub">${l.length}</span></h4>${l.length ? l.map(([k, src]) => { const m = M[k]; return `<div class="who"><span class="dot" style="background:${CLASS[m.class]}"></span>${who(k)}${m.flex ? `<span class="sub" title="can also play">+${ROLE[m.flex][0]}</span>` : ''}${src === 'd' ? '<span class="src d" title="signed up in Discord">Discord</span>' : ''}</div>`; }).join('') : '<div class="sub">nobody yet</div>'}</div>`;
+    return `<div class="role"><h4>${ROLE[role]}<span class="sub">${l.length}</span></h4>${l.length ? l.map(([k, src, cls, spec]) => {
+      const m = M[k] || (r.rh ? matchMember(k) : null);
+      const col = CLASS[(m && m.class) || cls] || '#bbb';
+      const nameHtml = m ? `<a href="#/roster/${m.key}" style="color:${CLASS[m.class] || '#ddd'}" title="${esc(k)} in Discord">${esc(m.name)}</a>` : `<span style="color:${col}">${esc(k)}</span>`;
+      return `<div class="who"><span class="dot" style="background:${col}"></span>${nameHtml}${spec ? `<span class="sub">${esc(spec)}</span>` : ''}${m && m.flex && !r.rh ? `<span class="sub" title="can also play">+${ROLE[m.flex][0]}</span>` : ''}${src === 'd' && !r.rh ? '<span class="src d" title="signed up in Discord">Discord</span>' : ''}</div>`;
+    }).join('') : '<div class="sub">nobody yet</div>'}</div>`;
   }
   function pageRaids(id) {
     const sel = raids.find(r => r.id === id) || raids[0];
-    app.innerHTML = `${stamp()}<div class="pagehead"><h1>Raids</h1><p>Sign up in game or in Discord. Times shown in server time and yours.</p></div>
+    const rhStamp = rhInfo ? `<div class="stamp">From <b>Raid-Helper</b> · changed <b>${ago(rhInfo.updated)}</b> · checked every 15 minutes</div>` : stamp();
+    app.innerHTML = `${rhStamp}<div class="pagehead"><h1>Raids</h1><p>Sign up in Discord on the Raid-Helper post${rhInfo ? '' : ' or in game'}. Times shown in server time and yours.</p></div>
       <div class="cols raidcols">
         <div><div class="panel"><div class="ph">Upcoming</div>${raids.map(r => `<a class="row ${r === sel ? 'sel' : ''}" href="#/raids/${r.id}">
-            <span class="pill ${r.kind === 'PvP' ? 'r' : 'o'}">${esc(r.kind)}</span><div class="grow"><div class="nm ell">${esc(r.title)}</div><div class="sub ell">${fmt(r.at, D.serverTZ)} Server</div></div><span class="sub">${count(r)}/${r.size}</span></a>`).join('')}</div>
-          <div class="panel" style="margin-top:16px"><div class="ph">Recent</div>${D.recentRaids.map(r => `<div class="row"><div class="grow"><div class="nm">${esc(r.title)}</div><div class="sub">${fmt(when(r.when), D.serverTZ)} · ${r.count} went · ${esc(r.leader)}</div></div></div>`).join('')}</div>
-          <div class="panel" style="margin-top:16px"><div class="ph">Lockouts<span class="r">who's saved</span></div><div class="sec">${['MC', 'Ony'].map(id => { const saved = D.members.filter(m => m.locks.includes(id)); const free = D.members.filter(m => m.level === 60 && !m.locks.includes(id)); return `<div style="margin-bottom:10px"><b>${id === 'MC' ? 'Molten Core' : 'Onyxia'}</b> <span class="sub">· ${saved.length} saved · ${free.length} level 60s free</span><div class="sub" style="margin-top:3px">Free: ${free.map(m => who(m.key)).join(', ') || 'nobody'}</div></div>`; }).join('')}</div></div>
+            <span class="pill ${r.kind === 'PvP' ? 'r' : 'o'}">${esc(r.kind)}</span><div class="grow"><div class="nm ell">${esc(r.title)}</div><div class="sub ell">${fmt(r.at, D.serverTZ)} Server</div></div><span class="sub">${count(r)}${r.size ? '/' + r.size : ''}</span></a>`).join('')}</div>
+          ${D.recentRaids.length ? `<div class="panel" style="margin-top:16px"><div class="ph">Recent</div>${D.recentRaids.map(r => `<div class="row"><div class="grow"><div class="nm">${esc(r.title)}</div><div class="sub">${fmt(when(r.when), D.serverTZ)} · ${r.count} went · ${esc(r.leader)}</div></div></div>`).join('')}</div>` : ''}
+          ${rhInfo && D.sample ? '' : `<div class="panel" style="margin-top:16px"><div class="ph">Lockouts<span class="r">who's saved</span></div><div class="sec">${['MC', 'Ony'].map(id => { const saved = D.members.filter(m => m.locks.includes(id)); const free = D.members.filter(m => m.level === 60 && !m.locks.includes(id)); return `<div style="margin-bottom:10px"><b>${id === 'MC' ? 'Molten Core' : 'Onyxia'}</b> <span class="sub">· ${saved.length} saved · ${free.length} level 60s free</span><div class="sub" style="margin-top:3px">Free: ${free.map(m => who(m.key)).join(', ') || 'nobody'}</div></div>`; }).join('')}</div></div>`}
         </div>
         ${sel ? `<div class="panel"><div class="sec" style="padding:16px 14px">
-            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="pill ${sel.kind === 'PvP' ? 'r' : 'o'}">${esc(sel.kind)} raid</span><span class="sub">${sel.size}-player · led by ${esc(sel.leader)}</span></div>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="pill ${sel.kind === 'PvP' ? 'r' : 'o'}">${esc(sel.kind)} raid</span><span class="sub">${sel.size ? sel.size + '-player · ' : ''}led by ${esc(sel.leader)}${sel.channel ? ' · #' + esc(sel.channel) : ''}</span></div>
             <h2 style="font-family:Cinzel,serif;font-size:24px;margin:8px 0 4px">${esc(sel.title)}</h2><div>${both(sel.at)}</div>
-            <div class="sub" style="margin-top:6px">${count(sel)} of ${sel.size} signed up${sel.late.length ? ` · ${sel.late.length} late` : ''}${sel.absent.length ? ` · ${sel.absent.length} can't make it` : ''}</div>
+            <div class="sub" style="margin-top:6px">${count(sel)}${sel.size ? ' of ' + sel.size : ''} signed up${sel.late.length ? ` · ${sel.late.length} late` : ''}${(sel.tentative || []).length ? ` · ${sel.tentative.length} tentative` : ''}${sel.absent.length ? ` · ${sel.absent.length} can't make it` : ''}</div>
             ${sel.note ? `<p class="note" style="margin:10px 0 0">"${esc(sel.note)}"</p>` : ''}</div>
           <div class="sec"><h3>Signed up</h3><div class="roles">${['tank', 'healer', 'melee', 'ranged'].map(x => roleCol(sel, x)).join('')}</div>
-            ${sel.late.length || sel.absent.length ? `<div class="sub" style="margin-top:10px">${sel.late.length ? 'Late: ' + sel.late.map(who).join(', ') : ''}${sel.late.length && sel.absent.length ? ' · ' : ''}${sel.absent.length ? "Can't make it: " + sel.absent.map(who).join(', ') : ''}</div>` : ''}</div>
+            ${sel.late.length || sel.absent.length || (sel.tentative || []).length || sel.bench.length ? `<div class="sub" style="margin-top:10px">${[sel.late.length ? 'Late: ' + sel.late.map(who).join(', ') : '', (sel.tentative || []).length ? 'Tentative: ' + sel.tentative.map(who).join(', ') : '', sel.bench.length ? 'Bench: ' + sel.bench.map(who).join(', ') : '', sel.absent.length ? "Can't make it: " + sel.absent.map(who).join(', ') : ''].filter(Boolean).join(' · ')}</div>` : ''}</div>
           ${sel.comp ? `<div class="sec"><h3>Groups <span class="pill g" style="margin-left:6px;text-transform:none;letter-spacing:0">Published</span></h3><div class="groups">${sel.comp.map(([g, list]) => `<div class="grp"><b>${esc(g)}</b>${list.map(k => `<div class="who">${who(k)}</div>`).join('')}</div>`).join('')}</div></div>` : ''}
           ${sel.walkthrough ? `<div class="sec"><h3>Walkthrough</h3><div style="white-space:pre-wrap">${esc(sel.walkthrough)}</div></div>` : ''}
           <div class="sec sub">To sign up or change your role: in game (Raids &amp; Events), or on the Raid-Helper post in Discord.</div></div>` : '<div class="panel empty">No raids posted.</div>'}
@@ -445,6 +470,14 @@ footer a{color:var(--muted);text-decoration:underline}
   }
   addEventListener('hashchange', route);
   route();
+  // Live raids from Raid-Helper (data/raidhelper.json, refreshed by the GitHub Action). Falls back to the sample raids.
+  fetch('data/raidhelper.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(rh => {
+    if (!rh || !Array.isArray(rh.events) || !rh.events.length) return;
+    raids = rh.events.map(rhRaid).sort((a, b) => a.at - b.at);
+    rhInfo = rh;
+    D.recentRaids = [];
+    route();
+  }).catch(() => {});
 })();
 </script>
 </body></html>
