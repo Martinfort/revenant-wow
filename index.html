@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Revenant Muster</title>
-<meta name="description" content="Guild Muster for &lt;Revenant&gt;, outside the game: raids, events, crafting and the roster.">
+<meta name="description" content="Guild Muster for &lt;The Revenant&gt;, outside the game: raids, events, crafting and the roster.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -125,7 +125,7 @@ footer a{color:var(--muted);text-decoration:underline}
 </head>
 <body>
 <header><div class="wrap bar">
-  <a class="brand" href="#/"><b>&lt;Revenant&gt;</b><span>Guild Muster</span></a>
+  <a class="brand" href="#/"><b>&lt;The Revenant&gt;</b><span>Guild Muster</span></a>
   <nav id="nav">
     <a href="#/" data-p="home">Home</a>
     <a href="#/raids" data-p="raids">Raids</a>
@@ -139,8 +139,8 @@ footer a{color:var(--muted);text-decoration:underline}
 
 <script id="gm-data" type="application/json">
 {
-  "guild": "Revenant", "realm": "Forever", "serverTZ": "America/Chicago", "serverTZLabel": "CST", "updatedBy": "Dalian", "sample": true,
-  "armoryUrl": "",
+  "guild": "The Revenant", "realm": "Forever", "serverTZ": "America/Chicago", "serverTZLabel": "CST", "updatedBy": "Dalian", "sample": true,
+  "armoryUrl": "https://worldofwarcraft.blizzard.com/en-us/forever/us/armory/character/{slug}",
   "members": [
     {"key":"dalian","name":"Dalian","class":"PALADIN","level":60,"rank":"Guild Master","role":"healer","flex":"tank","main":true,"ready":true,"att":["MC","Ony","BWL"],"profs":[["Enchanting",300,300],["Tailoring",260,300]],"online":true,"seen":"online","kudos":18,"locks":["MC"]},
     {"key":"buttons","name":"Buttons","class":"MAGE","level":60,"rank":"Admin","role":"ranged","main":true,"ready":true,"att":["MC","Ony"],"profs":[["Tailoring",300,300],["Enchanting",230,300]],"online":true,"seen":"online","kudos":9,"locks":[]},
@@ -226,7 +226,9 @@ footer a{color:var(--muted);text-decoration:underline}
   const online = m => m && m.online;
   const wh = id => id[0] === 'i' ? `https://www.wowhead.com/classic/item=${id.slice(1)}` : `https://www.wowhead.com/classic/spell=${id.slice(1)}`;
   const ago = ts => { const h = Math.max(0, (NOW / 1000 - ts) / 60); return h < 60 ? Math.round(h) + ' min ago' : h < 1440 ? Math.round(h / 60) + 'h ago' : Math.round(h / 1440) + ' days ago'; };
-  const armory = m => D.armoryUrl ? D.armoryUrl.replace('{name}', encodeURIComponent(m.name)).replace('{realm}', encodeURIComponent(D.realm)) : null;
+  // Forever armory: /armory/character/<name lowercased, spaces as hyphens>, e.g. "Sova Mere" -> sova-mere
+  const slug = n => String(n).trim().toLowerCase().replace(/\s+/g, '-');
+  const armory = m => D.armoryUrl ? D.armoryUrl.replace('{slug}', encodeURIComponent(slug(m.name))).replace('{name}', encodeURIComponent(m.name)).replace('{realm}', encodeURIComponent(D.realm)) : null;
 
   // "+1d20:00" = tomorrow at 8pm server time (sample data); real data carries epoch seconds
   function when(spec) {
