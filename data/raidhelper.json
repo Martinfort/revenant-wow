@@ -1,0 +1,958 @@
+{
+ "source": "Raid-Helper",
+ "events": [
+  {
+   "id": "1561228051134677056",
+   "title": "Mareeza Raid Team Registration",
+   "description": "Sign up if interested Wed Morning 10am Raids",
+   "startTime": 1796828400,
+   "endTime": 1796828400,
+   "leaderName": "Mareeza the Cheesah",
+   "channelName": "Mareeza Wed 10am",
+   "templateId": "wowclassic",
+   "color": "113,54,138",
+   "lastUpdated": 1793723987,
+   "signUps": [
+    {
+     "name": "Sovamere",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 21,
+     "entryTime": 1793727586
+    },
+    {
+     "name": "Hoop",
+     "className": "Rogue",
+     "specName": "Combat",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1791569834
+    },
+    {
+     "name": "fuggle",
+     "className": "Warlock",
+     "specName": "Demonology",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 13,
+     "entryTime": 1791920927
+    },
+    {
+     "name": "MareezatheCheesah",
+     "className": "Priest",
+     "specName": "Discipline",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1789935527
+    },
+    {
+     "name": "lycra",
+     "className": "Rogue",
+     "specName": "Combat",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1791593782
+    },
+    {
+     "name": "Hundam",
+     "className": "Priest",
+     "specName": "Shadow",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 15,
+     "entryTime": 1792465444
+    },
+    {
+     "name": "Andrew",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 12,
+     "entryTime": 1791858441
+    },
+    {
+     "name": "MongwuArak",
+     "className": "Druid",
+     "specName": "Balance",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 17,
+     "entryTime": 1792947002
+    },
+    {
+     "name": "Cataclysm",
+     "className": "Priest",
+     "specName": "Holy",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1791827590
+    },
+    {
+     "name": "Healness",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 14,
+     "entryTime": 1791939516
+    },
+    {
+     "name": "wrathful",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1790001324
+    },
+    {
+     "name": "Aggro",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1791404930
+    },
+    {
+     "name": "Zuriel",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1791559118
+    },
+    {
+     "name": "Fiyaman",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 18,
+     "entryTime": 1793219742
+    },
+    {
+     "name": "Blestin(Shrew)",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 11,
+     "entryTime": 1791854556
+    },
+    {
+     "name": "Terpsquatch",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 16,
+     "entryTime": 1792772479
+    },
+    {
+     "name": "Goose",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 20,
+     "entryTime": 1793620922
+    },
+    {
+     "name": "chickendriz",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1790031690
+    },
+    {
+     "name": "Tino",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 19,
+     "entryTime": 1793475230
+    },
+    {
+     "name": "Dittzy-Moondancer",
+     "className": "Paladin",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1791559008
+    },
+    {
+     "name": "Ghulthar",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1791178319
+    }
+   ]
+  },
+  {
+   "id": "1561226895868170281",
+   "title": "Friday Progression Run Availability/Interest Check",
+   "description": "Scroll up to read full details",
+   "startTime": 1797042600,
+   "endTime": 1797042600,
+   "leaderName": "Daddy Dalian",
+   "channelName": "Dalian - Fri 930pm EST",
+   "templateId": "wowclassic",
+   "color": "113,54,138",
+   "lastUpdated": 1793813964,
+   "signUps": [
+    {
+     "name": "Duffman",
+     "className": "Druid",
+     "specName": "Balance",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1790210203
+    },
+    {
+     "name": "Martinfort\"Buttons\"",
+     "className": "Mage",
+     "specName": "Frost",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1790137327
+    },
+    {
+     "name": "Pniz/Ballsagna",
+     "className": "Absence",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1790181802
+    },
+    {
+     "name": "Moopain",
+     "className": "Tentative",
+     "specName": "Fury",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 13,
+     "entryTime": 1790390454
+    },
+    {
+     "name": "Kfaa",
+     "className": "Rogue",
+     "specName": "Subtlety",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 29,
+     "entryTime": 1793813964
+    },
+    {
+     "name": "DaddyDalian",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1790103894
+    },
+    {
+     "name": "Red",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 28,
+     "entryTime": 1793504019
+    },
+    {
+     "name": "TedMcGiggles",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 16,
+     "entryTime": 1790575733
+    },
+    {
+     "name": "Drsprinkles",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 22,
+     "entryTime": 1791482646
+    },
+    {
+     "name": "SPEED",
+     "className": "Hunter",
+     "specName": "Survival",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1790117761
+    },
+    {
+     "name": "Knarg",
+     "className": "Mage",
+     "specName": "Frost",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 18,
+     "entryTime": 1790783501
+    },
+    {
+     "name": "Manwe",
+     "className": "Tank",
+     "specName": "Guardian",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 14,
+     "entryTime": 1790458933
+    },
+    {
+     "name": "Anti/Furinex/Mageulook",
+     "className": "Rogue",
+     "specName": "Subtlety",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1790224396
+    },
+    {
+     "name": "Dunktown",
+     "className": "Warrior",
+     "specName": "Arms",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1790136907
+    },
+    {
+     "name": "MightyBoosh",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 24,
+     "entryTime": 1792452529
+    },
+    {
+     "name": "UncleWally/Skudush",
+     "className": "Paladin",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1790183817
+    },
+    {
+     "name": "Tanador",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 23,
+     "entryTime": 1792355311
+    },
+    {
+     "name": "drblazed",
+     "className": "Rogue",
+     "specName": "Combat",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 15,
+     "entryTime": 1790472197
+    },
+    {
+     "name": "Birdmaster",
+     "className": "Warlock",
+     "specName": "Destruction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1790197525
+    },
+    {
+     "name": "MrDrCooper",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 20,
+     "entryTime": 1791160560
+    },
+    {
+     "name": "Wampa",
+     "className": "Shaman",
+     "specName": "Elemental",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 21,
+     "entryTime": 1791344895
+    },
+    {
+     "name": "RawdawgyuJimbo",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 27,
+     "entryTime": 1792535258
+    },
+    {
+     "name": "Eric",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 26,
+     "entryTime": 1792456429
+    },
+    {
+     "name": "Tinkerbell",
+     "className": "Absence",
+     "status": "primary",
+     "position": 11,
+     "entryTime": 1790307386
+    },
+    {
+     "name": "Zerxy(Shamful)",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1790121123
+    },
+    {
+     "name": "FoxtrotFilthy",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 17,
+     "entryTime": 1790705349
+    },
+    {
+     "name": "lycra",
+     "className": "Rogue",
+     "specName": "Combat",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 25,
+     "entryTime": 1792453380
+    },
+    {
+     "name": "Kilyra",
+     "className": "Priest",
+     "specName": "Shadow",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 12,
+     "entryTime": 1790319293
+    },
+    {
+     "name": "KhalDrogash",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 19,
+     "entryTime": 1790816364
+    }
+   ]
+  },
+  {
+   "id": "1561226830327980034",
+   "title": "Saturday Casual/Alt Run Availability/Interest Check",
+   "description": "Scroll up to read full details",
+   "startTime": 1797129000,
+   "endTime": 1797129000,
+   "leaderName": "Daddy Dalian",
+   "channelName": "Dalian - Sat 930pm EST",
+   "templateId": "wowclassic",
+   "color": "113,54,138",
+   "lastUpdated": 1793813988,
+   "signUps": [
+    {
+     "name": "Hoop",
+     "className": "Warrior",
+     "specName": "Arms",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1790103040
+    },
+    {
+     "name": "Eric",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 16,
+     "entryTime": 1792456486
+    },
+    {
+     "name": "Sephel(Mightyboosh)",
+     "className": "Absence",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1790236839
+    },
+    {
+     "name": "TedMcGiggles",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1790575754
+    },
+    {
+     "name": "inv1dium",
+     "className": "Shaman",
+     "specName": "Restoration1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 15,
+     "entryTime": 1791725403
+    },
+    {
+     "name": "Anti/Furinex/Mageulook",
+     "className": "Mage",
+     "specName": "Fire",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 11,
+     "entryTime": 1790655306
+    },
+    {
+     "name": "Birdmaster",
+     "className": "Warlock",
+     "specName": "Destruction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1790197515
+    },
+    {
+     "name": "Jayvid",
+     "className": "Shaman",
+     "specName": "Elemental",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1790218029
+    },
+    {
+     "name": "Knarg",
+     "className": "Mage",
+     "specName": "Frost",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 13,
+     "entryTime": 1790783566
+    },
+    {
+     "name": "Drsprinkles",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 14,
+     "entryTime": 1791676710
+    },
+    {
+     "name": "Ashylina",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1790138628
+    },
+    {
+     "name": "FoxtrotFilthy",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 12,
+     "entryTime": 1790705384
+    },
+    {
+     "name": "UncleWally/Skudush",
+     "className": "Priest",
+     "specName": "Holy",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1790183851
+    },
+    {
+     "name": "Semi",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1790583896
+    },
+    {
+     "name": "Kfaa",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 17,
+     "entryTime": 1793813988
+    },
+    {
+     "name": "DaddyDalian",
+     "className": "Paladin",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1790102827
+    },
+    {
+     "name": "Moopain",
+     "className": "Warrior",
+     "specName": "Fury",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1790390387
+    }
+   ]
+  },
+  {
+   "id": "1561227876588720129",
+   "title": "Monday Night Availability Check",
+   "startTime": 1797303600,
+   "endTime": 1797303600,
+   "leaderName": "Peek",
+   "channelName": "Peek Mon 10pm EST",
+   "templateId": "wowclassic",
+   "color": "113,54,138",
+   "lastUpdated": 1794466732,
+   "signUps": [
+    {
+     "name": "neno",
+     "className": "Druid",
+     "specName": "Feral",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 13,
+     "entryTime": 1790571185
+    },
+    {
+     "name": "StuSunday",
+     "className": "Rogue",
+     "specName": "Subtlety",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1790282388
+    },
+    {
+     "name": "Javid",
+     "className": "Shaman",
+     "specName": "Restoration1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 20,
+     "entryTime": 1791231031
+    },
+    {
+     "name": "Kev",
+     "className": "Hunter",
+     "specName": "Survival",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 27,
+     "entryTime": 1793334912
+    },
+    {
+     "name": "Luckierr",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 15,
+     "entryTime": 1790661331
+    },
+    {
+     "name": "Eric",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 23,
+     "entryTime": 1792456389
+    },
+    {
+     "name": "donaldtoes",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1790289142
+    },
+    {
+     "name": "Jka/TheGhostofLilsend",
+     "className": "Tentative",
+     "specName": "Retribution",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 21,
+     "entryTime": 1792216245
+    },
+    {
+     "name": "Pniz/Ballsagna",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1790181791
+    },
+    {
+     "name": "Peek",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1790148569
+    },
+    {
+     "name": "Madazz",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1790184683
+    },
+    {
+     "name": "Katsu",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 12,
+     "entryTime": 1790559510
+    },
+    {
+     "name": "Bleedspell",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 17,
+     "entryTime": 1790811441
+    },
+    {
+     "name": "lycra",
+     "className": "Rogue",
+     "specName": "Combat",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 19,
+     "entryTime": 1791069417
+    },
+    {
+     "name": "Science",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 22,
+     "entryTime": 1792357980
+    },
+    {
+     "name": "FoxtrotFilthy",
+     "className": "Hunter",
+     "specName": "Marksmanship",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 16,
+     "entryTime": 1790705230
+    },
+    {
+     "name": "Demon/Mooanu",
+     "className": "Shaman",
+     "specName": "Enhancement",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1790157771
+    },
+    {
+     "name": "Garruk",
+     "className": "Warrior",
+     "specName": "Fury",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 24,
+     "entryTime": 1792472167
+    },
+    {
+     "name": "Tinkerbell",
+     "className": "Priest",
+     "specName": "Discipline",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1790224436
+    },
+    {
+     "name": "Birubiru",
+     "className": "Warrior",
+     "specName": "Fury",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 28,
+     "entryTime": 1794466732
+    },
+    {
+     "name": "Semi",
+     "className": "Druid",
+     "specName": "Balance",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 14,
+     "entryTime": 1790581562
+    },
+    {
+     "name": "Ragemachinee/JuJuJunkie",
+     "className": "Shaman",
+     "specName": "Elemental",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 18,
+     "entryTime": 1790896389
+    },
+    {
+     "name": "Tharo",
+     "className": "Mage",
+     "specName": "Frost",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 25,
+     "entryTime": 1792537148
+    },
+    {
+     "name": "alaskanzebra",
+     "className": "Priest",
+     "specName": "Shadow",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 26,
+     "entryTime": 1792565426
+    },
+    {
+     "name": "UncleWally/Skudush",
+     "className": "Warlock",
+     "specName": "Destruction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1790183786
+    },
+    {
+     "name": "Moopain",
+     "className": "Warrior",
+     "specName": "Fury",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 11,
+     "entryTime": 1790390363
+    },
+    {
+     "name": "Mace",
+     "className": "Paladin",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1790221240
+    },
+    {
+     "name": "Duffman",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1790210099
+    }
+   ]
+  }
+ ],
+ "_fields": {
+  "event": [
+   "advancedSettings",
+   "announcements",
+   "channelId",
+   "channelName",
+   "channelType",
+   "classes",
+   "closingTime",
+   "coLeaders",
+   "color",
+   "creator",
+   "date",
+   "description",
+   "displayTitle",
+   "endTime",
+   "id",
+   "lastUpdated",
+   "leaderId",
+   "leaderName",
+   "roles",
+   "serverId",
+   "signUps",
+   "startTime",
+   "templateId",
+   "temporaryRole",
+   "time",
+   "title"
+  ],
+  "signUp": [
+   "cClassName",
+   "cRoleName",
+   "cSpecName",
+   "classEmoteId",
+   "className",
+   "entryTime",
+   "id",
+   "name",
+   "note",
+   "position",
+   "roleEmoteId",
+   "roleName",
+   "specEmoteId",
+   "specName",
+   "status",
+   "userId"
+  ]
+ },
+ "updated": 1794511416
+}

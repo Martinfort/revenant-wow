@@ -1,10 +1,6 @@
 {
- "ok": false,
- "problem": "could not list events",
- "serverIdLooksNumeric": true,
- "keyLength": 40,
- "request": "servers/events",
- "http": 401,
- "reason": "invalid token",
- "at": 1794510991
+ "ok": true,
+ "events": 4,
+ "listShape": "dict:currentPage,eventsOverall,eventsTransmitted,pages,postedEvents",
+ "at": 1794511420
 }
