@@ -4,7 +4,7 @@
 Runs in GitHub Actions every 15 minutes. Reads the server's events with the server API key
 (GitHub secret RAIDHELPER_API_KEY) and each upcoming event's sign-ups, and writes a trimmed,
 public-safe copy: titles, times, leader, description and sign-up names/classes/roles.
-Discord user IDs are NOT published. The file only changes (and is only committed) when an
+Discord user IDs are NOT published. The key must be the SERVER key from /apikey (not /usersettings apikey). The file only changes (and is only committed) when an
 event or sign-up actually changes.
 """
 import json, os, sys, time, urllib.request, urllib.error
