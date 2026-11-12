@@ -1,0 +1,10 @@
+{
+ "ok": false,
+ "problem": "could not list events",
+ "serverIdLooksNumeric": true,
+ "keyLength": 40,
+ "request": "servers/events",
+ "http": 401,
+ "reason": "invalid token",
+ "at": 1794510991
+}
