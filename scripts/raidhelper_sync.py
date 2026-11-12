@@ -13,6 +13,8 @@ API = "https://raid-helper.xyz/api/v4"
 KEY = os.environ.get("RAIDHELPER_API_KEY", "").strip()
 SERVER = os.environ.get("RAIDHELPER_SERVER_ID", "").strip()
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "raidhelper.json")
+STATUS = os.path.join(os.path.dirname(__file__), "..", "data", "raidhelper-status.json")
+LAST_ERROR = {}
 PAST_HOURS = 12            # keep an event this long after it started
 SIGNUP_FIELDS = ("name", "className", "specName", "roleName", "status", "position", "entryTime")
 EVENT_FIELDS = ("title", "description", "startTime", "endTime", "leaderName", "channelName", "templateId", "color", "imageUrl", "closeTime", "lastUpdated")
@@ -26,9 +28,15 @@ def get(path, auth=True):
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.loads(r.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
-        print(f"Raid-Helper {path.split('/')[1]} request failed: HTTP {e.code}", file=sys.stderr)   # never print the key
+        try:
+            reason = json.loads(e.read().decode("utf-8")).get("reason") or ""
+        except Exception:
+            reason = ""
+        LAST_ERROR.update({"request": path.split("/")[1] + ("/" + path.split("/")[3] if path.count("/") >= 3 else ""), "http": e.code, "reason": str(reason)[:200]})
+        print(f"Raid-Helper request failed: HTTP {e.code} {reason}", file=sys.stderr)   # never print the key
         return None
     except Exception as e:
+        LAST_ERROR.update({"request": path.split("/")[1], "error": type(e).__name__})
         print(f"Raid-Helper request failed: {type(e).__name__}", file=sys.stderr)
         return None
 
@@ -50,13 +58,30 @@ def to_int(x):
         return None
 
 
+def status(ok, **extra):
+    # A small public status file (no key, no server id) so a failed run can be read from the repo.
+    body = {"ok": ok, **extra}
+    try:
+        with open(STATUS, encoding="utf-8") as f:
+            if {k: v for k, v in json.load(f).items() if k != "at"} == body:
+                return
+    except Exception:
+        pass
+    body["at"] = int(time.time())
+    os.makedirs(os.path.dirname(STATUS), exist_ok=True)
+    with open(STATUS, "w", encoding="utf-8") as f:
+        json.dump(body, f, indent=1)
+
+
 def main():
     if not KEY or not SERVER:
+        status(False, problem="secrets missing", hasKey=bool(KEY), hasServer=bool(SERVER), serverIdLooksNumeric=SERVER.isdigit())
         print("RAIDHELPER_API_KEY / RAIDHELPER_SERVER_ID secrets are missing", file=sys.stderr)
-        return 1
+        return 0
     listing = get(f"/servers/{SERVER}/events")
     if listing is None:
-        return 1
+        status(False, problem="could not list events", serverIdLooksNumeric=SERVER.isdigit(), keyLength=len(KEY), **LAST_ERROR)
+        return 0
     now = time.time()
     events, keys_seen, su_keys_seen = [], set(), set()
     for ev in event_list(listing):
@@ -83,6 +108,7 @@ def main():
         events.append(out)
         time.sleep(0.4)   # stay well inside Raid-Helper's rate limits
     events.sort(key=lambda e: e.get("startTime") or 0)
+    status(True, events=len(events), listShape=(type(listing).__name__ + (":" + ",".join(sorted(listing.keys()))[:200] if isinstance(listing, dict) else "")))
     body = {"source": "Raid-Helper", "events": events,
             "_fields": {"event": sorted(keys_seen), "signUp": sorted(su_keys_seen)}}   # field names only, for building the page
     old = None
