@@ -11,7 +11,7 @@
    "channelName": "Mareeza Wed 10am",
    "templateId": "wowclassic",
    "color": "113,54,138",
-   "lastUpdated": 1793723987,
+   "lastUpdated": 1794515425,
    "signUps": [
     {
      "name": "Sovamere",
@@ -129,6 +129,15 @@
      "status": "primary",
      "position": 7,
      "entryTime": 1791559118
+    },
+    {
+     "name": "Frankel",
+     "className": "Tank",
+     "specName": "Guardian",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 22,
+     "entryTime": 1794515382
     },
     {
      "name": "Fiyaman",
@@ -954,5 +963,5 @@
    "userId"
   ]
  },
- "updated": 1794511416
+ "updated": 1794529950
 }
