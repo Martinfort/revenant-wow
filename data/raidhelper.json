@@ -214,6 +214,124 @@
    ]
   },
   {
+   "id": "1570990355606937651",
+   "title": "ZerxSpeed - Barrow Deeps - 10 man",
+   "description": "Wed 10:00pm EST (after Onyxia)",
+   "startTime": 1796871600,
+   "endTime": 1796871600,
+   "leaderName": "SPEED",
+   "channelName": "ZerxSpeed Wed 10:00pm EST (after Onyxia) - 10 man",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1794631150,
+   "signUps": [
+    {
+     "name": "Moopain",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1794624222
+    },
+    {
+     "name": "Zerxy(Lawd)",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1794623717
+    },
+    {
+     "name": "MightyBoosh",
+     "className": "Healer",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1794631150
+    },
+    {
+     "name": "PhantomJack",
+     "className": "Melee",
+     "specName": "Feral",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1794625971
+    },
+    {
+     "name": "SPEED",
+     "className": "Melee",
+     "specName": "Retribution",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1794623703
+    }
+   ]
+  },
+  {
+   "id": "1570991025126768832",
+   "title": "ZerxSpeed - Hyjal Summit - 20 man",
+   "description": "Tues 9:30pm EST",
+   "startTime": 1797042600,
+   "endTime": 1797042600,
+   "leaderName": "SPEED",
+   "channelName": "ZerxSpeed Tues 9:30pm EST - 20 man",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1794631161,
+   "signUps": [
+    {
+     "name": "SPEED",
+     "className": "Melee",
+     "specName": "Retribution",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1794623919
+    },
+    {
+     "name": "Moopain",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1794624256
+    },
+    {
+     "name": "Zerxy(Lawd)",
+     "className": "Tank",
+     "specName": "Protection1",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1794623912
+    },
+    {
+     "name": "MightyBoosh",
+     "className": "Healer",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1794631161
+    },
+    {
+     "name": "PhantomJack",
+     "className": "Melee",
+     "specName": "Feral",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1794626333
+    }
+   ]
+  },
+  {
    "id": "1561226895868170281",
    "title": "Friday Progression Run Availability/Interest Check",
    "description": "Scroll up to read full details",
@@ -963,5 +1081,5 @@
    "userId"
   ]
  },
- "updated": 1794529950
+ "updated": 1794645300
 }
