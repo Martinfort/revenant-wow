@@ -223,7 +223,7 @@
    "channelName": "ZerxSpeed Wed 10:00pm EST (after Onyxia) - 10 man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794631150,
+   "lastUpdated": 1794666998,
    "signUps": [
     {
      "name": "Moopain",
@@ -262,6 +262,15 @@
      "entryTime": 1794625971
     },
     {
+     "name": "DammitJimmy",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1794666998
+    },
+    {
      "name": "SPEED",
      "className": "Melee",
      "specName": "Retribution",
@@ -282,7 +291,7 @@
    "channelName": "ZerxSpeed Tues 9:30pm EST - 20 man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794631161,
+   "lastUpdated": 1794666525,
    "signUps": [
     {
      "name": "SPEED",
@@ -328,6 +337,15 @@
      "status": "primary",
      "position": 4,
      "entryTime": 1794626333
+    },
+    {
+     "name": "RawdawgyuJimbo",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1794666525
     }
    ]
   },
@@ -1081,5 +1099,5 @@
    "userId"
   ]
  },
- "updated": 1794645300
+ "updated": 1794669666
 }
