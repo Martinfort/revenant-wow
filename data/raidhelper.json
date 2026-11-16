@@ -2,218 +2,6 @@
  "source": "Raid-Helper",
  "events": [
   {
-   "id": "1561228051134677056",
-   "title": "Mareeza Raid Team Registration",
-   "description": "Sign up if interested Wed Morning 10am Raids",
-   "startTime": 1796828400,
-   "endTime": 1796828400,
-   "leaderName": "Mareeza the Cheesah",
-   "channelName": "Mareeza Wed 10am",
-   "templateId": "wowclassic",
-   "color": "113,54,138",
-   "lastUpdated": 1794515425,
-   "signUps": [
-    {
-     "name": "Sovamere",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 21,
-     "entryTime": 1793727586
-    },
-    {
-     "name": "Hoop",
-     "className": "Rogue",
-     "specName": "Combat",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 8,
-     "entryTime": 1791569834
-    },
-    {
-     "name": "fuggle",
-     "className": "Warlock",
-     "specName": "Demonology",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 13,
-     "entryTime": 1791920927
-    },
-    {
-     "name": "MareezatheCheesah",
-     "className": "Priest",
-     "specName": "Discipline",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 1,
-     "entryTime": 1789935527
-    },
-    {
-     "name": "lycra",
-     "className": "Rogue",
-     "specName": "Combat",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 9,
-     "entryTime": 1791593782
-    },
-    {
-     "name": "Hundam",
-     "className": "Priest",
-     "specName": "Shadow",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 15,
-     "entryTime": 1792465444
-    },
-    {
-     "name": "Andrew",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 12,
-     "entryTime": 1791858441
-    },
-    {
-     "name": "MongwuArak",
-     "className": "Druid",
-     "specName": "Balance",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 17,
-     "entryTime": 1792947002
-    },
-    {
-     "name": "Cataclysm",
-     "className": "Priest",
-     "specName": "Holy",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 10,
-     "entryTime": 1791827590
-    },
-    {
-     "name": "Healness",
-     "className": "Tank",
-     "specName": "Protection1",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 14,
-     "entryTime": 1791939516
-    },
-    {
-     "name": "wrathful",
-     "className": "Warlock",
-     "specName": "Affliction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 2,
-     "entryTime": 1790001324
-    },
-    {
-     "name": "Aggro",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 5,
-     "entryTime": 1791404930
-    },
-    {
-     "name": "Zuriel",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 7,
-     "entryTime": 1791559118
-    },
-    {
-     "name": "Frankel",
-     "className": "Tank",
-     "specName": "Guardian",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 22,
-     "entryTime": 1794515382
-    },
-    {
-     "name": "Fiyaman",
-     "className": "Shaman",
-     "specName": "Enhancement",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 18,
-     "entryTime": 1793219742
-    },
-    {
-     "name": "Blestin(Shrew)",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 11,
-     "entryTime": 1791854556
-    },
-    {
-     "name": "Terpsquatch",
-     "className": "Shaman",
-     "specName": "Enhancement",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 16,
-     "entryTime": 1792772479
-    },
-    {
-     "name": "Goose",
-     "className": "Druid",
-     "specName": "Restoration",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 20,
-     "entryTime": 1793620922
-    },
-    {
-     "name": "chickendriz",
-     "className": "Druid",
-     "specName": "Restoration",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1790031690
-    },
-    {
-     "name": "Tino",
-     "className": "Warlock",
-     "specName": "Affliction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 19,
-     "entryTime": 1793475230
-    },
-    {
-     "name": "Dittzy-Moondancer",
-     "className": "Paladin",
-     "specName": "Holy1",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 6,
-     "entryTime": 1791559008
-    },
-    {
-     "name": "Ghulthar",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 4,
-     "entryTime": 1791178319
-    }
-   ]
-  },
-  {
    "id": "1570990355606937651",
    "title": "ZerxSpeed - Barrow Deeps - 10 man",
    "description": "Wed 10:00pm EST (after Onyxia)",
@@ -278,6 +66,65 @@
      "status": "primary",
      "position": 1,
      "entryTime": 1794623703
+    }
+   ]
+  },
+  {
+   "id": "1571873717401817178",
+   "title": "Week 1, 20-Man Raid, Coffee Geist Team",
+   "description": "Match your discord name with your in-game toon name.\nNote: First raid is scheduled for Thursday, December 10th!",
+   "startTime": 1796914800,
+   "endTime": 1796914800,
+   "leaderName": "Mareeza",
+   "channelName": "Mareeza Wed 10am",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1794848528,
+   "signUps": [
+    {
+     "name": "Dittzy",
+     "className": "Healer",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1794838719
+    },
+    {
+     "name": "fuggle",
+     "className": "Ranged",
+     "specName": "Demonology",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1794848528
+    },
+    {
+     "name": "Mareeza",
+     "className": "Healer",
+     "specName": "Discipline",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1794834322
+    },
+    {
+     "name": "Hoop",
+     "className": "Melee",
+     "specName": "Combat",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1794834875
+    },
+    {
+     "name": "Ghulthar",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1794836956
     }
    ]
   },
@@ -1099,5 +946,5 @@
    "userId"
   ]
  },
- "updated": 1794669666
+ "updated": 1794861717
 }
