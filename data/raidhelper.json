@@ -79,8 +79,17 @@
    "channelName": "Mareeza Wed 10am",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794903298,
+   "lastUpdated": 1794930798,
    "signUps": [
+    {
+     "name": "Terpsquatch",
+     "className": "Melee",
+     "specName": "Enhancement",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1794930798
+    },
     {
      "name": "Dittzy",
      "className": "Healer",
@@ -89,6 +98,15 @@
      "status": "primary",
      "position": 4,
      "entryTime": 1794838719
+    },
+    {
+     "name": "Dairyus",
+     "className": "Melee",
+     "specName": "Fury",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1794920948
     },
     {
      "name": "fuggle",
@@ -972,5 +990,5 @@
    "userId"
   ]
  },
- "updated": 1794916467
+ "updated": 1794947230
 }
