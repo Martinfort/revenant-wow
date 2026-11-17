@@ -79,7 +79,7 @@
    "channelName": "Mareeza Wed 10am",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794848528,
+   "lastUpdated": 1794881507,
    "signUps": [
     {
      "name": "Dittzy",
@@ -89,6 +89,24 @@
      "status": "primary",
      "position": 4,
      "entryTime": 1794838719
+    },
+    {
+     "name": "Zuriel",
+     "className": "Melee",
+     "specName": "Retribution",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1794878911
+    },
+    {
+     "name": "Wabba",
+     "className": "Ranged",
+     "specName": "Frost",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1794881507
     },
     {
      "name": "fuggle",
@@ -116,6 +134,15 @@
      "status": "primary",
      "position": 2,
      "entryTime": 1794834875
+    },
+    {
+     "name": "Thrak",
+     "className": "Ranged",
+     "specName": "Survival",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1794863312
     },
     {
      "name": "Ghulthar",
@@ -946,5 +973,5 @@
    "userId"
   ]
  },
- "updated": 1794861717
+ "updated": 1794885134
 }
