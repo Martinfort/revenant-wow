@@ -250,7 +250,7 @@
    "channelName": "Dalian - Fri 930pm EST",
    "templateId": "wowclassic",
    "color": "113,54,138",
-   "lastUpdated": 1793813964,
+   "lastUpdated": 1795043285,
    "signUps": [
     {
      "name": "Duffman",
@@ -481,6 +481,15 @@
      "status": "primary",
      "position": 17,
      "entryTime": 1790705349
+    },
+    {
+     "name": "Zuriel",
+     "className": "Paladin",
+     "specName": "Retribution",
+     "roleName": "Melee",
+     "status": "primary",
+     "position": 30,
+     "entryTime": 1795043285
     },
     {
      "name": "lycra",
@@ -990,5 +999,5 @@
    "userId"
   ]
  },
- "updated": 1794947230
+ "updated": 1795050768
 }
