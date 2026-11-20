@@ -11,7 +11,7 @@
    "channelName": "Week 1 - Onyxia Day 1 Guild Run - Lead: Shining Bind - 12/9 Weds 9PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795097420,
+   "lastUpdated": 1795186099,
    "signUps": [
     {
      "name": "Mareeza",
@@ -39,6 +39,15 @@
      "status": "primary",
      "position": 4,
      "entryTime": 1795097420
+    },
+    {
+     "name": "Uruk",
+     "className": "Ranged",
+     "specName": "Destruction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1795186099
     },
     {
      "name": "Wabba",
@@ -161,7 +170,7 @@
    "channelName": "Mareeza Wed 10am",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795122009,
+   "lastUpdated": 1795184265,
    "signUps": [
     {
      "name": "Terpsquatch",
@@ -260,6 +269,15 @@
      "status": "primary",
      "position": 2,
      "entryTime": 1794834875
+    },
+    {
+     "name": "Vie",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 13,
+     "entryTime": 1795184265
     },
     {
      "name": "Frankel",
@@ -382,7 +400,7 @@
    "channelName": "Week 1 - Onyxia Guild Run - Lead: Peek/Dalian - 12/14 Mon 10PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795147275,
+   "lastUpdated": 1795189194,
    "signUps": [
     {
      "name": "Zuriel",
@@ -446,6 +464,15 @@
      "status": "primary",
      "position": 6,
      "entryTime": 1795147041
+    },
+    {
+     "name": "Shaedow",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1795189194
     }
    ]
   },
@@ -763,5 +790,5 @@
    "userId"
   ]
  },
- "updated": 1795160361
+ "updated": 1795191791
 }
