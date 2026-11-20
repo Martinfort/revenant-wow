@@ -52,6 +52,38 @@
    ]
   },
   {
+   "id": "1573037832962965535",
+   "title": "Dalian Weds - Progression 10PM 20man",
+   "description": "This is my progression raid. You must come with full consumes and fully enchanted.\nWeek 1, come in the best 60 gear you can get, later we will want to ensure we all have pre-bis once we have that fully figured out.\nI will be reviewing logs after raid and making recommendations and pointing you to a class advisor if I see room for improvement.\nThe aim of this raid is to improve week by week, so if you are one of those people that can't take feedback without going all Katie Kaboom, I don't think you want to run with me!\nFor those that don't know me as a raid lead, I like to take feedback and collaborate to work for improvement.\nIf you are not improving or are unprepared, you may be benched, but I have faith we'll all get better together.\n*Be aware we are overlapping the 40 man Onyxia on Wednesdays, which is intentional, with an average of 100 players online I want to ensure not everyone is sitting around wishing they could raid.\nIf you're running with me in our 20man, you will likely be joining Peek and I's 40man instead of the Wedsnesday 40.",
+   "startTime": 1796871600,
+   "endTime": 1796871600,
+   "leaderName": "Daddy \"Little Spoon\" Dalian",
+   "channelName": "Dalian Weds - Progression 10PM 20man",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1795114737,
+   "signUps": [
+    {
+     "name": "Zuriel",
+     "className": "Melee",
+     "specName": "Retribution",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1795114737
+    },
+    {
+     "name": "Birdmaster",
+     "className": "Ranged",
+     "specName": "Destruction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1795111855
+    }
+   ]
+  },
+  {
    "id": "1570990355606937651",
    "title": "ZerxSpeed - Barrow Deeps - 10 man",
    "description": "Wed 10:00pm EST (after Onyxia)",
@@ -129,7 +161,7 @@
    "channelName": "Mareeza Wed 10am",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795103340,
+   "lastUpdated": 1795122009,
    "signUps": [
     {
      "name": "Terpsquatch",
@@ -150,13 +182,13 @@
      "entryTime": 1794838719
     },
     {
-     "name": "Dairyus",
-     "className": "Melee",
-     "specName": "Fury",
+     "name": "Aymonzo",
+     "className": "Ranged",
+     "specName": "Affliction",
      "roleName": "Dps",
      "status": "primary",
-     "position": 9,
-     "entryTime": 1794920948
+     "position": 12,
+     "entryTime": 1795122009
     },
     {
      "name": "fuggle",
@@ -166,6 +198,41 @@
      "status": "primary",
      "position": 5,
      "entryTime": 1794848528
+    },
+    {
+     "name": "Thrak",
+     "className": "Ranged",
+     "specName": "Survival",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1794863312
+    },
+    {
+     "name": "Zuriel",
+     "className": "Tentative",
+     "specName": "Retribution",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1794903298
+    },
+    {
+     "name": "Ghulthar",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1794836956
+    },
+    {
+     "name": "Dairyus",
+     "className": "Melee",
+     "specName": "Fury",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1794920948
     },
     {
      "name": "Mareeza",
@@ -195,32 +262,6 @@
      "entryTime": 1794834875
     },
     {
-     "name": "Thrak",
-     "className": "Ranged",
-     "specName": "Survival",
-     "roleName": "Dps",
-     "status": "primary",
-     "position": 6,
-     "entryTime": 1794863312
-    },
-    {
-     "name": "Zuriel",
-     "className": "Tentative",
-     "specName": "Retribution",
-     "status": "primary",
-     "position": 8,
-     "entryTime": 1794903298
-    },
-    {
-     "name": "Ghulthar",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1794836956
-    },
-    {
      "name": "Frankel",
      "className": "Tank",
      "specName": "Guardian",
@@ -232,16 +273,48 @@
    ]
   },
   {
+   "id": "1573038764828270774",
+   "title": "Peek Thu - Progression 10PM 20man",
+   "description": "This is Peek's raid. You must come with full consumes and fully enchanted.\nWeek 1, come in the best 60 gear you can get, later we will want to ensure we all have pre-bis once we have that fully figured out.\nPeek always reviews logs after raid and will provide coaching if there's room for improvement.\nThe aim of this raid is to clear content and improve weekly.\nPeek reserves the right as raid lead to bench people based on performance and comp.",
+   "startTime": 1796958000,
+   "endTime": 1796958000,
+   "leaderName": "Daddy \"Little Spoon\" Dalian",
+   "channelName": "Peek Thu - Progression 10PM 20man",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1795114078,
+   "signUps": [
+    {
+     "name": "Daweeki",
+     "className": "Ranged",
+     "specName": "Destruction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1795112495
+    },
+    {
+     "name": "Mace",
+     "className": "Healer",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1795114078
+    }
+   ]
+  },
+  {
    "id": "1570991025126768832",
    "title": "ZerxSpeed - Hyjal Summit - 20 man",
-   "description": "Tues 9:30pm EST",
+   "description": "First week on Friday 9:30pm EST then we will resume Tuesdays after the first week.",
    "startTime": 1797042600,
    "endTime": 1797042600,
    "leaderName": "SPEED",
-   "channelName": "ZerxSpeed Tues 9:30pm EST - 20 man",
+   "channelName": "ZerxSpeed Friday 9:30pm EST - 20 man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794666525,
+   "lastUpdated": 1795112370,
    "signUps": [
     {
      "name": "SPEED",
@@ -300,451 +373,6 @@
    ]
   },
   {
-   "id": "1561226895868170281",
-   "title": "Friday Progression Run Availability/Interest Check",
-   "description": "Scroll up to read full details",
-   "startTime": 1797042600,
-   "endTime": 1797042600,
-   "leaderName": "Daddy Dalian",
-   "channelName": "Dalian - Fri 930pm EST",
-   "templateId": "wowclassic",
-   "color": "113,54,138",
-   "lastUpdated": 1795043285,
-   "signUps": [
-    {
-     "name": "Duffman",
-     "className": "Druid",
-     "specName": "Balance",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 9,
-     "entryTime": 1790210203
-    },
-    {
-     "name": "Martinfort\"Buttons\"",
-     "className": "Mage",
-     "specName": "Frost",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 5,
-     "entryTime": 1790137327
-    },
-    {
-     "name": "Pniz/Ballsagna",
-     "className": "Absence",
-     "status": "primary",
-     "position": 6,
-     "entryTime": 1790181802
-    },
-    {
-     "name": "Moopain",
-     "className": "Tentative",
-     "specName": "Fury",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 13,
-     "entryTime": 1790390454
-    },
-    {
-     "name": "Kfaa",
-     "className": "Rogue",
-     "specName": "Subtlety",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 29,
-     "entryTime": 1793813964
-    },
-    {
-     "name": "DaddyDalian",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 1,
-     "entryTime": 1790103894
-    },
-    {
-     "name": "Red",
-     "className": "Warlock",
-     "specName": "Affliction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 28,
-     "entryTime": 1793504019
-    },
-    {
-     "name": "TedMcGiggles",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 16,
-     "entryTime": 1790575733
-    },
-    {
-     "name": "Drsprinkles",
-     "className": "Warlock",
-     "specName": "Affliction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 22,
-     "entryTime": 1791482646
-    },
-    {
-     "name": "SPEED",
-     "className": "Hunter",
-     "specName": "Survival",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 2,
-     "entryTime": 1790117761
-    },
-    {
-     "name": "Knarg",
-     "className": "Mage",
-     "specName": "Frost",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 18,
-     "entryTime": 1790783501
-    },
-    {
-     "name": "Manwe",
-     "className": "Tank",
-     "specName": "Guardian",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 14,
-     "entryTime": 1790458933
-    },
-    {
-     "name": "Anti/Furinex/Mageulook",
-     "className": "Rogue",
-     "specName": "Subtlety",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 10,
-     "entryTime": 1790224396
-    },
-    {
-     "name": "Dunktown",
-     "className": "Warrior",
-     "specName": "Arms",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 4,
-     "entryTime": 1790136907
-    },
-    {
-     "name": "MightyBoosh",
-     "className": "Druid",
-     "specName": "Restoration",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 24,
-     "entryTime": 1792452529
-    },
-    {
-     "name": "UncleWally/Skudush",
-     "className": "Paladin",
-     "specName": "Holy1",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 7,
-     "entryTime": 1790183817
-    },
-    {
-     "name": "Tanador",
-     "className": "Shaman",
-     "specName": "Enhancement",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 23,
-     "entryTime": 1792355311
-    },
-    {
-     "name": "drblazed",
-     "className": "Rogue",
-     "specName": "Combat",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 15,
-     "entryTime": 1790472197
-    },
-    {
-     "name": "Birdmaster",
-     "className": "Warlock",
-     "specName": "Destruction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 8,
-     "entryTime": 1790197525
-    },
-    {
-     "name": "MrDrCooper",
-     "className": "Shaman",
-     "specName": "Enhancement",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 20,
-     "entryTime": 1791160560
-    },
-    {
-     "name": "Wampa",
-     "className": "Shaman",
-     "specName": "Elemental",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 21,
-     "entryTime": 1791344895
-    },
-    {
-     "name": "RawdawgyuJimbo",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 27,
-     "entryTime": 1792535258
-    },
-    {
-     "name": "Eric",
-     "className": "Tank",
-     "specName": "Protection1",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 26,
-     "entryTime": 1792456429
-    },
-    {
-     "name": "Tinkerbell",
-     "className": "Absence",
-     "status": "primary",
-     "position": 11,
-     "entryTime": 1790307386
-    },
-    {
-     "name": "Zerxy(Shamful)",
-     "className": "Tank",
-     "specName": "Protection1",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1790121123
-    },
-    {
-     "name": "FoxtrotFilthy",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 17,
-     "entryTime": 1790705349
-    },
-    {
-     "name": "Zuriel",
-     "className": "Paladin",
-     "specName": "Retribution",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 30,
-     "entryTime": 1795043285
-    },
-    {
-     "name": "lycra",
-     "className": "Rogue",
-     "specName": "Combat",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 25,
-     "entryTime": 1792453380
-    },
-    {
-     "name": "Kilyra",
-     "className": "Priest",
-     "specName": "Shadow",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 12,
-     "entryTime": 1790319293
-    },
-    {
-     "name": "KhalDrogash",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 19,
-     "entryTime": 1790816364
-    }
-   ]
-  },
-  {
-   "id": "1561226830327980034",
-   "title": "Saturday Casual/Alt Run Availability/Interest Check",
-   "description": "Scroll up to read full details",
-   "startTime": 1797129000,
-   "endTime": 1797129000,
-   "leaderName": "Daddy Dalian",
-   "channelName": "Dalian - Sat 930pm EST",
-   "templateId": "wowclassic",
-   "color": "113,54,138",
-   "lastUpdated": 1793813988,
-   "signUps": [
-    {
-     "name": "Hoop",
-     "className": "Warrior",
-     "specName": "Arms",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 2,
-     "entryTime": 1790103040
-    },
-    {
-     "name": "Eric",
-     "className": "Tank",
-     "specName": "Protection1",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 16,
-     "entryTime": 1792456486
-    },
-    {
-     "name": "Sephel(Mightyboosh)",
-     "className": "Absence",
-     "status": "primary",
-     "position": 7,
-     "entryTime": 1790236839
-    },
-    {
-     "name": "TedMcGiggles",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 9,
-     "entryTime": 1790575754
-    },
-    {
-     "name": "inv1dium",
-     "className": "Shaman",
-     "specName": "Restoration1",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 15,
-     "entryTime": 1791725403
-    },
-    {
-     "name": "Anti/Furinex/Mageulook",
-     "className": "Mage",
-     "specName": "Fire",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 11,
-     "entryTime": 1790655306
-    },
-    {
-     "name": "Birdmaster",
-     "className": "Warlock",
-     "specName": "Destruction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 5,
-     "entryTime": 1790197515
-    },
-    {
-     "name": "Jayvid",
-     "className": "Shaman",
-     "specName": "Elemental",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 6,
-     "entryTime": 1790218029
-    },
-    {
-     "name": "Knarg",
-     "className": "Mage",
-     "specName": "Frost",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 13,
-     "entryTime": 1790783566
-    },
-    {
-     "name": "Drsprinkles",
-     "className": "Druid",
-     "specName": "Restoration",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 14,
-     "entryTime": 1791676710
-    },
-    {
-     "name": "Ashylina",
-     "className": "Druid",
-     "specName": "Restoration",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1790138628
-    },
-    {
-     "name": "FoxtrotFilthy",
-     "className": "Hunter",
-     "specName": "Marksmanship",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 12,
-     "entryTime": 1790705384
-    },
-    {
-     "name": "UncleWally/Skudush",
-     "className": "Priest",
-     "specName": "Holy",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 4,
-     "entryTime": 1790183851
-    },
-    {
-     "name": "Semi",
-     "className": "Tank",
-     "specName": "Protection1",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 10,
-     "entryTime": 1790583896
-    },
-    {
-     "name": "Kfaa",
-     "className": "Shaman",
-     "specName": "Enhancement",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 17,
-     "entryTime": 1793813988
-    },
-    {
-     "name": "DaddyDalian",
-     "className": "Paladin",
-     "specName": "Holy1",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 1,
-     "entryTime": 1790102827
-    },
-    {
-     "name": "Moopain",
-     "className": "Warrior",
-     "specName": "Fury",
-     "roleName": "Melee",
-     "status": "primary",
-     "position": 8,
-     "entryTime": 1790390387
-    }
-   ]
-  },
-  {
    "id": "1572901388927639643",
    "title": "Week 1 - Onyxia Guild Run - Lead: Peek/Dalian - 12/14 Mon 10PM EST",
    "description": "Onyxia Week 1 - We will not realistically expect pre-bis for the first raid but please make sure you have the best possible gear, fully enchanted, and bring raid consumes.\nWe do NOT know if they changed Onyxia, make sure you are fully attuned so you can actually run the raid!!!",
@@ -754,8 +382,17 @@
    "channelName": "Week 1 - Onyxia Guild Run - Lead: Peek/Dalian - 12/14 Mon 10PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795100794,
+   "lastUpdated": 1795126398,
    "signUps": [
+    {
+     "name": "Zuriel",
+     "className": "Melee",
+     "specName": "Retribution",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1795114755
+    },
     {
      "name": "Peek",
      "className": "Tank",
@@ -764,6 +401,15 @@
      "status": "primary",
      "position": 1,
      "entryTime": 1795098655
+    },
+    {
+     "name": "Daweeki",
+     "className": "Ranged",
+     "specName": "Destruction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1795126398
     },
     {
      "name": "Mace",
@@ -1090,5 +736,5 @@
    "userId"
   ]
  },
- "updated": 1795111057
+ "updated": 1795134425
 }
