@@ -895,7 +895,7 @@
    "channelName": "wargame-ironbridge-20v2",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795318020,
+   "lastUpdated": 1795335601,
    "signUps": [
     {
      "name": "Alessi Britea 🏹",
@@ -923,6 +923,15 @@
      "status": "primary",
      "position": 5,
      "entryTime": 1795318020
+    },
+    {
+     "name": "Dillinger",
+     "className": "Healer",
+     "specName": "Holy",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1795335601
     },
     {
      "name": "Jaz",
@@ -993,5 +1002,5 @@
    "userId"
   ]
  },
- "updated": 1795318188
+ "updated": 1795348480
 }
