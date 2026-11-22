@@ -884,6 +884,65 @@
      "entryTime": 1790210099
     }
    ]
+  },
+  {
+   "id": "1573864113795371070",
+   "title": "The Iron Bridge - PvP Event 20v20",
+   "description": "This is a 20v20 wargame against the Alliance guild **Anarchy**. The rules are simple. Whichever team successfully gets 10 people across the other team's side of the bridge gets a point.\n\nEach point will be called and the sides will be reset.\n\n*The person who scored the point will become inactive for the remainder of the game!*\n\nSo the game will quickly become 19v20 and so on and so forth.\n\nThe first team to get 10 points, wins!",
+   "startTime": 1797906600,
+   "endTime": 1797906600,
+   "leaderName": "Daddy \"Little Spoon\" Dalian",
+   "channelName": "wargame-ironbridge-20v2",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1795318020,
+   "signUps": [
+    {
+     "name": "Alessi Britea 🏹",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1795312042
+    },
+    {
+     "name": "Rahs Klaht",
+     "className": "Ranged",
+     "specName": "Elemental",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 4,
+     "entryTime": 1795314924
+    },
+    {
+     "name": "xmadness",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1795318020
+    },
+    {
+     "name": "Jaz",
+     "className": "Healer",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1795309872
+    },
+    {
+     "name": "Daddy \"Little Spoon\" Dalian",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1795308903
+    }
+   ]
   }
  ],
  "_fields": {
@@ -934,5 +993,5 @@
    "userId"
   ]
  },
- "updated": 1795304186
+ "updated": 1795318188
 }
