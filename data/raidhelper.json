@@ -440,7 +440,7 @@
    "channelName": "ZerxSpeed Friday 9:30pm EST - 20 man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795112370,
+   "lastUpdated": 1795443172,
    "signUps": [
     {
      "name": "SPEED",
@@ -450,6 +450,15 @@
      "status": "primary",
      "position": 2,
      "entryTime": 1794623919
+    },
+    {
+     "name": "sm0kE-ss-",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1795443149
     },
     {
      "name": "Moopain",
@@ -1046,5 +1055,5 @@
    "userId"
   ]
  },
- "updated": 1795393113
+ "updated": 1795464233
 }
