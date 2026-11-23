@@ -2,54 +2,6 @@
  "source": "Raid-Helper",
  "events": [
   {
-   "id": "1574049113740410914",
-   "title": "UBRS w/Lord Valthalak for T0.5 Quest",
-   "description": "Lets kill Lord Doofus and complete our quest. Bring a few shadow prot pots.",
-   "startTime": 1795377600,
-   "endTime": 1795377600,
-   "leaderName": "Mareeza",
-   "channelName": "Mareeza, Sun, 3PM  EST, UBRS/Lord Valthalak, T0.5 Quest Boss",
-   "templateId": "wowforever",
-   "color": "113,54,138",
-   "lastUpdated": 1795358307,
-   "signUps": [
-    {
-     "name": "Wabba",
-     "className": "Ranged",
-     "specName": "Shadow",
-     "roleName": "Dps",
-     "status": "primary",
-     "position": 2,
-     "entryTime": 1795353127
-    },
-    {
-     "name": "Madazz",
-     "className": "Ranged",
-     "specName": "Beastmastery",
-     "roleName": "Dps",
-     "status": "primary",
-     "position": 4,
-     "entryTime": 1795358307
-    },
-    {
-     "name": "Miguel G",
-     "className": "Absence",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1795355220
-    },
-    {
-     "name": "Mareeza",
-     "className": "Healer",
-     "specName": "Holy",
-     "roleName": "Healers",
-     "status": "primary",
-     "position": 1,
-     "entryTime": 1795353032
-    }
-   ]
-  },
-  {
    "id": "1572900699896021023",
    "title": "Week 1 - Onyxia Day 1 Guild Run - Lead: Shining Bind - 12/9 Weds 9PM EST",
    "description": "Onyxia Day 1 - We will not realistically expect pre-bis for the first raid but please make sure you have the best possible gear, fully enchanted, and bring raid consumes.\n**We do NOT know if they changed Onyxia, make sure you are fully attuned so you can actually run the raid!!!**",
@@ -411,7 +363,7 @@
    "channelName": "Peek Thu - Progression 10PM 20man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795300159,
+   "lastUpdated": 1795392231,
    "signUps": [
     {
      "name": "Katsu",
@@ -430,6 +382,15 @@
      "status": "primary",
      "position": 3,
      "entryTime": 1795235543
+    },
+    {
+     "name": "Birubiru",
+     "className": "Melee",
+     "specName": "Fury",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1795392231
     },
     {
      "name": "Demon/Mooanu",
@@ -961,24 +922,15 @@
    "channelName": "wargame-ironbridge-20v2",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795366025,
+   "lastUpdated": 1795383454,
    "signUps": [
-    {
-     "name": "Alessi Britea 🏹",
-     "className": "Ranged",
-     "specName": "Beastmastery",
-     "roleName": "Dps",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1795312042
-    },
     {
      "name": "Rahs Klaht",
      "className": "Ranged",
      "specName": "Elemental",
      "roleName": "Dps",
      "status": "primary",
-     "position": 4,
+     "position": 3,
      "entryTime": 1795314924
     },
     {
@@ -987,7 +939,7 @@
      "specName": "Destruction",
      "roleName": "Dps",
      "status": "primary",
-     "position": 8,
+     "position": 7,
      "entryTime": 1795366025
     },
     {
@@ -996,7 +948,7 @@
      "specName": "Retribution",
      "roleName": "Dps",
      "status": "primary",
-     "position": 7,
+     "position": 6,
      "entryTime": 1795362367
     },
     {
@@ -1005,7 +957,7 @@
      "specName": "Protection",
      "roleName": "Tanks",
      "status": "primary",
-     "position": 5,
+     "position": 4,
      "entryTime": 1795318020
     },
     {
@@ -1014,7 +966,7 @@
      "specName": "Holy",
      "roleName": "Healers",
      "status": "primary",
-     "position": 6,
+     "position": 5,
      "entryTime": 1795335601
     },
     {
@@ -1034,6 +986,14 @@
      "status": "primary",
      "position": 1,
      "entryTime": 1795308903
+    },
+    {
+     "name": "Alessi Britea 🏹",
+     "className": "Tentative",
+     "specName": "Beastmastery",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1795383454
     }
    ]
   }
@@ -1086,5 +1046,5 @@
    "userId"
   ]
  },
- "updated": 1795374030
+ "updated": 1795393113
 }
