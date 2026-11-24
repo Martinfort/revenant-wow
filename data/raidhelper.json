@@ -11,7 +11,7 @@
    "channelName": "Week 1 - Onyxia Day 1 Guild Run - Lead: Shining Bind - 12/9 Weds 9PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795487859,
+   "lastUpdated": 1795533889,
    "signUps": [
     {
      "name": "Mareeza",
@@ -59,6 +59,15 @@
      "entryTime": 1795097420
     },
     {
+     "name": "Bluejay Dread",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1795525042
+    },
+    {
      "name": "Shaedow",
      "className": "Ranged",
      "specName": "Affliction",
@@ -75,6 +84,14 @@
      "status": "primary",
      "position": 5,
      "entryTime": 1795186099
+    },
+    {
+     "name": "Ghulthar",
+     "className": "Tentative",
+     "specName": "Protection",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1795533889
     },
     {
      "name": "Wabba",
@@ -156,8 +173,26 @@
    "channelName": "ZerxSpeed Wed 10:00pm EST (after Onyxia) - 10 man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1794666998,
+   "lastUpdated": 1795533950,
    "signUps": [
+    {
+     "name": "Daweeki",
+     "className": "Ranged",
+     "specName": "Destruction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1795525686
+    },
+    {
+     "name": "Savage (Trollanda)",
+     "className": "Healer",
+     "specName": "Holy",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 8,
+     "entryTime": 1795533925
+    },
     {
      "name": "Moopain",
      "className": "Tank",
@@ -175,6 +210,15 @@
      "status": "primary",
      "position": 2,
      "entryTime": 1794623717
+    },
+    {
+     "name": "sm0kE-ss-",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1795533950
     },
     {
      "name": "MightyBoosh",
@@ -224,7 +268,7 @@
    "channelName": "Mareeza, Wed, 10AM EST, Hyjal Summit",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795482632,
+   "lastUpdated": 1795525224,
    "signUps": [
     {
      "name": "Uruk",
@@ -270,6 +314,15 @@
      "status": "primary",
      "position": 12,
      "entryTime": 1795122009
+    },
+    {
+     "name": "Bluejay Dread",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 19,
+     "entryTime": 1795525224
     },
     {
      "name": "Pniz/Synex",
@@ -976,7 +1029,7 @@
    "channelName": "wargame-ironbridge-20v2",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795383454,
+   "lastUpdated": 1795518833,
    "signUps": [
     {
      "name": "Rahs Klaht",
@@ -1042,6 +1095,15 @@
      "entryTime": 1795308903
     },
     {
+     "name": "Hoggie (SYNAPSΞ)",
+     "className": "Tank",
+     "specName": "Guardian",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1795518833
+    },
+    {
      "name": "Alessi Britea 🏹",
      "className": "Tentative",
      "specName": "Beastmastery",
@@ -1100,5 +1162,5 @@
    "userId"
   ]
  },
- "updated": 1795495634
+ "updated": 1795534211
 }
