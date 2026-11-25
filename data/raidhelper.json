@@ -615,7 +615,7 @@
    "channelName": "Week 1 - Onyxia Guild Run - Lead: Peek/Dalian - 12/14 Mon 10PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795355668,
+   "lastUpdated": 1795587641,
    "signUps": [
     {
      "name": "Zuriel",
@@ -643,6 +643,15 @@
      "status": "primary",
      "position": 4,
      "entryTime": 1795126398
+    },
+    {
+     "name": "Semi",
+     "className": "Ranged",
+     "specName": "Balance",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 16,
+     "entryTime": 1795587641
     },
     {
      "name": "Katsu",
@@ -1162,5 +1171,5 @@
    "userId"
   ]
  },
- "updated": 1795534211
+ "updated": 1795595462
 }
