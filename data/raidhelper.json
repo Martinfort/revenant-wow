@@ -461,7 +461,7 @@
    "channelName": "Peek Thu - Progression 10PM 20man",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795625431,
+   "lastUpdated": 1795639442,
    "signUps": [
     {
      "name": "Katsu",
@@ -498,6 +498,15 @@
      "status": "primary",
      "position": 7,
      "entryTime": 1795392231
+    },
+    {
+     "name": "RustyManhood",
+     "className": "Healer",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1795639442
     },
     {
      "name": "Demon/Mooanu",
@@ -817,7 +826,7 @@
    "channelName": "Peek Mon 10pm EST",
    "templateId": "wowclassic",
    "color": "113,54,138",
-   "lastUpdated": 1795625415,
+   "lastUpdated": 1795639331,
    "signUps": [
     {
      "name": "neno",
@@ -892,15 +901,6 @@
      "entryTime": 1792216245
     },
     {
-     "name": "Pniz/Ballsagna",
-     "className": "Warlock",
-     "specName": "Affliction",
-     "roleName": "Ranged",
-     "status": "primary",
-     "position": 3,
-     "entryTime": 1790181791
-    },
-    {
      "name": "Peek",
      "className": "Tank",
      "specName": "Protection",
@@ -908,6 +908,15 @@
      "status": "primary",
      "position": 1,
      "entryTime": 1790148569
+    },
+    {
+     "name": "Pniz/Ballsagna",
+     "className": "Warlock",
+     "specName": "Affliction",
+     "roleName": "Ranged",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1790181791
     },
     {
      "name": "Madazz",
@@ -1007,6 +1016,15 @@
      "status": "primary",
      "position": 28,
      "entryTime": 1794466732
+    },
+    {
+     "name": "RustyManhood",
+     "className": "Druid",
+     "specName": "Restoration",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 30,
+     "entryTime": 1795639331
     },
     {
      "name": "Semi",
@@ -1225,5 +1243,5 @@
    "userId"
   ]
  },
- "updated": 1795632670
+ "updated": 1795658502
 }
