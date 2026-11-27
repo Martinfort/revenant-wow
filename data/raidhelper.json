@@ -11,7 +11,7 @@
    "channelName": "Mareeza, Wed, 12/2, 9:30PM EST, The Calling Raid - Silithus",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795761425,
+   "lastUpdated": 1795800745,
    "signUps": [
     {
      "name": "Mareeza",
@@ -19,8 +19,17 @@
      "specName": "Holy",
      "roleName": "Healers",
      "status": "primary",
-     "position": 1,
-     "entryTime": 1795759936
+     "position": 4,
+     "entryTime": 1795786590
+    },
+    {
+     "name": "Kiumo",
+     "className": "Melee",
+     "specName": "Combat",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1795786345
     },
     {
      "name": "Shaedow",
@@ -28,8 +37,35 @@
      "specName": "Affliction",
      "roleName": "Dps",
      "status": "primary",
-     "position": 2,
+     "position": 1,
      "entryTime": 1795761425
+    },
+    {
+     "name": "Dittzy",
+     "className": "Healer",
+     "specName": "Holy1",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 6,
+     "entryTime": 1795800745
+    },
+    {
+     "name": "Wabba",
+     "className": "Ranged",
+     "specName": "Shadow",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 5,
+     "entryTime": 1795786703
+    },
+    {
+     "name": "moshcraft",
+     "className": "Ranged",
+     "specName": "Marksmanship",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 3,
+     "entryTime": 1795786481
     }
    ]
   },
@@ -43,17 +79,8 @@
    "channelName": "Week 1 - Onyxia Day 1 Guild Run - Lead: Shining Bind - 12/9 Weds 9PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795630398,
+   "lastUpdated": 1795801045,
    "signUps": [
-    {
-     "name": "Miguel G",
-     "className": "Tank",
-     "specName": "Protection",
-     "roleName": "Tanks",
-     "status": "primary",
-     "position": 11,
-     "entryTime": 1795630398
-    },
     {
      "name": "Mareeza",
      "className": "Healer",
@@ -73,13 +100,13 @@
      "entryTime": 1795487848
     },
     {
-     "name": "sm0kE-ss-",
-     "className": "Ranged",
-     "specName": "Beastmastery",
-     "roleName": "Dps",
+     "name": "Dittzy",
+     "className": "Healer",
+     "specName": "Holy1",
+     "roleName": "Healers",
      "status": "primary",
-     "position": 7,
-     "entryTime": 1795486573
+     "position": 12,
+     "entryTime": 1795801045
     },
     {
      "name": "TopochicoHoop",
@@ -100,15 +127,6 @@
      "entryTime": 1795097420
     },
     {
-     "name": "Bluejay Dread",
-     "className": "Ranged",
-     "specName": "Affliction",
-     "roleName": "Dps",
-     "status": "primary",
-     "position": 9,
-     "entryTime": 1795525042
-    },
-    {
      "name": "Shaedow",
      "className": "Ranged",
      "specName": "Affliction",
@@ -127,14 +145,6 @@
      "entryTime": 1795186099
     },
     {
-     "name": "Ghulthar",
-     "className": "Tentative",
-     "specName": "Protection",
-     "status": "primary",
-     "position": 10,
-     "entryTime": 1795533889
-    },
-    {
      "name": "Wabba",
      "className": "Ranged",
      "specName": "Arcane",
@@ -142,6 +152,41 @@
      "status": "primary",
      "position": 2,
      "entryTime": 1795091174
+    },
+    {
+     "name": "Miguel G",
+     "className": "Tank",
+     "specName": "Protection",
+     "roleName": "Tanks",
+     "status": "primary",
+     "position": 11,
+     "entryTime": 1795630398
+    },
+    {
+     "name": "sm0kE-ss-",
+     "className": "Ranged",
+     "specName": "Beastmastery",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 7,
+     "entryTime": 1795486573
+    },
+    {
+     "name": "Bluejay Dread",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 9,
+     "entryTime": 1795525042
+    },
+    {
+     "name": "Ghulthar",
+     "className": "Tentative",
+     "specName": "Protection",
+     "status": "primary",
+     "position": 10,
+     "entryTime": 1795533889
     }
    ]
   },
@@ -701,8 +746,17 @@
    "channelName": "Week 1 - Onyxia Guild Run - Lead: Peek/Dalian - 12/14 Mon 10PM EST",
    "templateId": "wowforever",
    "color": "113,54,138",
-   "lastUpdated": 1795714137,
+   "lastUpdated": 1795810187,
    "signUps": [
+    {
+     "name": "Kiumo",
+     "className": "Melee",
+     "specName": "Combat",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 20,
+     "entryTime": 1795810187
+    },
     {
      "name": "Zuriel",
      "className": "Melee",
@@ -1302,5 +1356,5 @@
    "userId"
   ]
  },
- "updated": 1795778869
+ "updated": 1795810290
 }
