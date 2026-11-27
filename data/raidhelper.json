@@ -2,6 +2,38 @@
  "source": "Raid-Helper",
  "events": [
   {
+   "id": "1575756069953863813",
+   "title": "Mareeza, Wed, 12/02, 9:30 PM EST, The Calling Raid Quest",
+   "description": "Get some FAT PRE-BIS!",
+   "startTime": 1796265000,
+   "endTime": 1796265000,
+   "leaderName": "Mareeza",
+   "channelName": "Mareeza, Wed, 12/2, 9:30PM EST, The Calling Raid - Silithus",
+   "templateId": "wowforever",
+   "color": "113,54,138",
+   "lastUpdated": 1795761425,
+   "signUps": [
+    {
+     "name": "Mareeza",
+     "className": "Healer",
+     "specName": "Holy",
+     "roleName": "Healers",
+     "status": "primary",
+     "position": 1,
+     "entryTime": 1795759936
+    },
+    {
+     "name": "Shaedow",
+     "className": "Ranged",
+     "specName": "Affliction",
+     "roleName": "Dps",
+     "status": "primary",
+     "position": 2,
+     "entryTime": 1795761425
+    }
+   ]
+  },
+  {
    "id": "1572900699896021023",
    "title": "Week 1 - Onyxia Day 1 Guild Run - Lead: Shining Bind - 12/9 Weds 9PM EST",
    "description": "Onyxia Day 1 - We will not realistically expect pre-bis for the first raid but please make sure you have the best possible gear, fully enchanted, and bring raid consumes.\n**We do NOT know if they changed Onyxia, make sure you are fully attuned so you can actually run the raid!!!**",
@@ -1270,5 +1302,5 @@
    "userId"
   ]
  },
- "updated": 1795723114
+ "updated": 1795778869
 }
